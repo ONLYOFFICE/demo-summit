@@ -1,0 +1,432 @@
+
+
+.hero {
+	background-image: url('/images/hero-bg.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.hero .container img {
+	position: absolute;
+}
+
+.left-top-icon {
+	top: 154px;
+	left: -69px;
+}
+
+.left-center-icon {
+	top: 511px;
+	left: -27px;
+}
+
+.left-bottom-icon {
+	top: 644px;
+	left: 3px;
+}
+
+.right-top-icon {
+	top: 125px;
+	right: 20px;
+}
+
+.right-center-icon {
+	top: 248px;
+	right: -23px;
+}
+
+.right-center-fill-icon {
+	top: 542px;
+	right: 102px;
+}
+
+.right-bottom-icon {
+	top: 704px;
+	right: 3px;
+}
+
+.hero__inner {
+	padding: 175px 16px 264px;
+	text-align: center;
+	z-index: 2;
+	position: relative;
+}
+
+.hero__inner h1,
+.hero__inner h3,
+.hero__inner p,
+.hero__inner span,
+.hero__inner a {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero__title {
+	font-size: clamp(40px, 9vw, 80px);
+	color: #fff;
+	padding-bottom: 16px;
+}
+
+.hero__subtitle {
+	font-weight: 400;
+	font-size: 40px;
+	font-size: clamp(24px, 5vw, 40px);
+
+	color: #fff;
+}
+
+.hero__date {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 160%;
+	color: #fff;
+	padding: 62px 0;
+}
+
+.hero__date span {
+	font-weight: 400;
+}
+
+.hero__register {
+	border-radius: 28px;
+	padding: 19px 24px;
+	background: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 133%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #333;
+	display: inline-block;
+	transition: 0.3s ease;
+}
+
+.hero__register:hover {
+	background: #e6eff2;
+}
+
+.members {
+	background: #333;
+}
+
+.members__inner {
+	padding: 160px 16px;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.members__list {
+	display: flex;
+	gap: 80px 176px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.members__list--item {
+	width: 160px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+	text-align: center;
+}
+
+.members__list--item img {
+	width: 160px;
+	height: 160px;
+}
+
+.members__item-name {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 150%;
+	letter-spacing: 0.03em;
+	text-align: center;
+	color: #fff;
+}
+
+.agenda__event {
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+}
+
+.agenda__event .container > img {
+	position: absolute;
+}
+
+.agenda__event__inner {
+	padding: 175px 16px 145px;
+	text-align: center;
+	position: relative;
+	z-index: 10;
+}
+
+.agenda__event__title,
+.agenda__event__title {
+	font-size: 48px;
+	line-height: 133%;
+	color: #333;
+}
+
+.agenda__event__subtitle,
+.sponsors__subtitle {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	color: #333;
+	padding: 24px 0 55px;
+}
+
+.agenda__event__img,
+.sponsors__img {
+	max-width: 736px;
+	margin: 0 auto;
+	padding-bottom: 64px;
+}
+
+.agenda__event__img img,
+.sponsors__img img {
+	width: 100%;
+}
+
+.agenda__event__link,
+.sponsors__link {
+	border-radius: 28px;
+	padding: 19px 24px;
+	display: inline-block;
+	transition: 0.3s ease;
+}
+
+.agenda__event__link {
+	background: #8bb825;
+}
+
+.agenda__event__link:hover {
+	background: #9fcc3a;
+}
+
+.agenda-left-top-icon {
+	top: 185px;
+	left: -58px;
+}
+.agenda-left-center-icon {
+	top: 343px;
+	left: 35px;
+}
+
+.agenda-left-bottom-icon {
+	top: 631px;
+	left: -70px;
+}
+
+.agenda-right-top-icon {
+	top: 157px;
+	right: -45px;
+}
+
+.agenda-right-center-icon {
+	top: 551px;
+	right: -15px;
+}
+
+.agenda-right-bottom-icon {
+	top: 710px;
+	right: -47px;
+}
+
+.sponsors__link {
+	background: #0a5dac;
+}
+
+.sponsors__link:hover {
+	background: #1572ca;
+}
+
+.agenda__event__link button,
+.sponsors__link button {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 133%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	border: none;
+}
+
+.sponsors {
+	background-color: #f5f5f5;
+}
+
+.sponsors__inner {
+	padding: 204px 16px 156px;
+	text-align: center;
+}
+
+.editions {
+	background-image: url('/images/summit-bg.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.editors__inner {
+	padding: 160px 16px;
+	text-align: center;
+}
+
+.editors__title {
+	font-size: 48px;
+	line-height: 133%;
+	text-align: center;
+	color: #fff;
+}
+
+.editors__subtitle {
+	font-size: 32px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+	padding: 48px 0 24px;
+}
+
+.editors__info {
+	font-size: 20px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 72px;
+}
+
+.editors__content {
+	border-radius: 8px;
+	max-width: 568px;
+	width: 100%;
+	height: 300px;
+	box-shadow: 0 7px 25px 0 rgba(85, 85, 85, 0.15);
+	background: #0060cf;
+	margin: 0 auto;
+}
+
+.registration {
+	background-color: #333;
+}
+
+.registration__inner {
+	padding: 148px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	align-items: center;
+}
+
+.registration__title {
+	font-size: 48px;
+	line-height: 133%;
+	text-align: center;
+	color: #fff;
+}
+
+.registration__text {
+	font-size: 20px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+}
+
+.registration__btn {
+	border-radius: 28px;
+	padding: 19px 24px;
+	background: #ff6f3d;
+	transition: 0.3s ease;
+	display: inline-block;
+	text-align: center;
+}
+
+.registration__btn:hover {
+	background: #ff865c;
+}
+
+.registration__btn button {
+	font-weight: 600;
+	font-size: 13px;
+	line-height: 133%;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+
+/* @media (max-width: 1250px) {
+	.hero .container img,
+	.event__agenda .container > img {
+		display: none;
+	}
+} */
+
+@media (max-width: 864px) {
+	.hero__inner,
+	.members__inner,
+	.agenda__event__inner,
+	.sponsors__inner,
+	.editors__inner,
+	.registration__inner {
+		padding: 148px 16px;
+	}
+
+	.members__list {
+		gap: 80px;
+	}
+
+	.editors__content {
+		height: 200px;
+	}
+}
+
+@media (max-width: 680px) {
+	.hero__inner,
+	.members__inner,
+	.agenda__event__inner,
+	.sponsors__inner,
+	.editors__inner,
+	.registration__inner {
+		padding: 72px 16px;
+	}
+
+	.hero__date,
+	.editors__info,
+	.registration__text,
+	.agenda__event__subtitle,
+	.sponsors__subtitle,
+	.editors__info,
+	.registration__text {
+		font-size: 16px;
+	}
+
+	.members__list {
+		gap: 80px;
+	}
+
+	.agenda__event__title,
+	.sponsors__title,
+	.editors__title,
+	.registration__title {
+		font-size: 32px;
+	}
+
+	.editors__content {
+		height: 152px;
+	}
+}
+
+@media (max-width: 475px) {
+	.hero__register,
+	.agenda__event__link,
+	.sponsors__link,
+	.registration__btn {
+		width: 100%;
+	}
+}

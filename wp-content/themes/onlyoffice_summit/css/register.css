@@ -1,0 +1,251 @@
+.wrapper {
+	background: linear-gradient(133deg, #0856a8 0%, #00a6ce 100%) !important;
+}
+
+.register {
+	padding: 112px 16px 160px;
+}
+
+.register__title {
+	font-size: 48px;
+	text-align: center;
+	color: #fff;
+	padding-bottom: 40px;
+}
+
+.register__subtitle {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+}
+
+.register__description {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+	text-align: center;
+	color: #fff;
+	padding: 50px 0 60px;
+	max-width: 928px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.register__form {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	max-width: 544px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.form__details {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	color: #fff;
+	margin-bottom: 16px;
+}
+
+.register__form input {
+	border: 1px solid #5aa5ea;
+	border-radius: 3px;
+	padding: 15px;
+	background-color: transparent;
+	outline: none;
+	transition: all 0.3s ease;
+	font-weight: 400;
+	font-size: 16px;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 16px;
+}
+
+.phone{
+	display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 51px;
+    top: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #5AA5EA;
+}
+
+.phone_label{
+	position: relative;
+}
+
+#phone_id{
+	padding: 24px 36px 12px 62px;
+    margin-left: 0;
+    
+}
+
+.phone_placeholder{
+	position: absolute;
+	top: 5px;
+	left: 62px;
+	font-size: 12px;
+	font-weight: 400;
+	color:#5AA5EA;
+}
+.selected-flag{
+	background: #FFFFFF1A !important;
+}
+/* .selected-flag:hover{
+	background: #346FB7 !important;
+	border-radius: 2px 0px 0px 2px;
+	border: 1px solid #FFFFFF;
+} */
+
+.intl-tel-input:hover > .flag-container{
+	background: #346FB7 !important;
+	border-radius: 2px 0px 0px 2px;
+	border-right: 1px solid #FFFFFF;
+}
+
+.phone_flag[placeholder]{
+	position: absolute;
+}
+
+.checkbox{
+	display: flex;
+	align-items:center;
+	justify-content: start;
+}
+.wpcf7-list-item{
+	margin: 0 !important;
+}
+
+
+
+.register__form input:hover {
+	border: 1px solid #fff;
+}
+
+.register__form input::placeholder {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #5aa5ea;
+}
+
+input[aria-invalid='true']{
+	border: 1px solid #FFED3D;
+}
+
+.personal__data {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.personal__data+span {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+}
+
+.personal__data+span::before {
+	content: '';
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	flex-shrink: 0;
+	flex-grow: 0;
+	border: 1px solid #5AA5EA;
+	border-radius: 3px;
+	margin-right: 8px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50% 50%;
+}
+
+.personal__data:hover+span::before {
+	border: 1px solid #FFFFFF;
+}
+
+.personal__data:checked+span::before {
+	background-image: url(../images/checked.svg);
+	background-size: 100% 100%;
+	border: 1px solid #FFFFFF;
+}
+.personal__data:checked+span {
+	color:#fff;
+}
+
+
+.register__form--btn {
+	display: block;
+	border-radius: 28px !important;
+	padding: 19px 24px !important;
+	width: 164px !important;
+	height: 56px !important;
+	background: #8bb825 !important;
+	opacity: 0.8 !important;
+	font-weight: 600 !important;
+	font-size: 13px !important;
+	line-height: 133% !important;
+	letter-spacing: 0.04em !important;
+	text-transform: uppercase !important;
+	text-align: center !important;
+	color: #fff !important;
+	border: none !important;
+	margin: 0 auto !important;
+	cursor: pointer !important;
+	transition: 0.3s ease !important;
+	margin-top: 16px !important;
+}
+
+.register__form--btn:hover {
+	background: #9fcc3a !important;
+}
+
+.wpcf7-list-item-label{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color:#5AA5EA;
+	cursor: pointer;
+
+}
+
+span.wpcf7-list-item { display: block; }
+/* input[name='checkbox-76[]']{
+	width: 24px;
+    height: 24px;
+	border-radius: 3px;
+	opacity: 0;
+	border: 1px solid #5AA5EA;
+
+}
+
+input[name='checkbox-76[]']::before{
+	display: block;
+	content:'';
+	width: 24px;
+    height: 24px;
+	border-radius: 3px;
+	border: 1px solid #5AA5EA;
+	
+} */
+
+@media (max-width: 800px) {
+	.registration {
+		padding: 48px 16px 45px;
+	}
+	.personal__data {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 475px) {
+	.register__form--btn {
+		width: 100%;
+	}
+}
