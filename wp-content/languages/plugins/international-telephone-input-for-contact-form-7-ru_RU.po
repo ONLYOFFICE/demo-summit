@@ -1,0 +1,120 @@
+# Translation of Plugins - International Telephone Input for Contact Form 7 - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - International Telephone Input for Contact Form 7 - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-05-28 19:58:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - International Telephone Input for Contact Form 7 - Stable (latest release)\n"
+
+#. translators: 1. Two-letter country codes placeholder
+#: includes/tag.php:74
+msgid "The countries entered here will be moved at the top of the country dropdown list. Use two-letters country codes separated by hyphen."
+msgstr "Введенные здесь страны будут перемещены в верхнюю часть раскрывающегося списка стран. Используйте двухбуквенные коды стран, разделенные дефисом."
+
+#. translators: 1. Two-letter country codes placeholder
+#: includes/tag.php:73
+msgid "e.g. gb-us"
+msgstr "например gb-us"
+
+#: includes/tag.php:71
+msgid "Preferred Countries"
+msgstr "Предпочтительные страны"
+
+#. translators: 1. Two-letter country codes placeholder
+#: includes/tag.php:66
+msgid "Add a two-letters country code. When this option is set, the IP lookup feature will be disabled. Leave blank if you want to use the IP lookup feature."
+msgstr "Добавьте двухбуквенный код страны. Когда этот параметр установлен, функция поиска IP будет отключена. Оставьте поле пустым, если хотите использовать функцию поиска IP."
+
+#. translators: 1. Two-letter country codes placeholder
+#: includes/tag.php:65
+msgid "e.g. us"
+msgstr "например us"
+
+#: includes/tag.php:63
+msgid "Initial Country"
+msgstr "Исходная страна"
+
+#: includes/tag.php:58
+msgid "This will override the dynamic international telephone placeholders for all country. It will only display the input you enter here."
+msgstr "Это переопределит динамические заполнители международных телефонных номеров для всей страны. Он будет отображать только ввод, который вы здесь вводите."
+
+#: includes/tag.php:58
+msgid "Use this text as the placeholder of the field."
+msgstr "Используйте этот текст как заполнитель поля."
+
+#: includes/tag.php:56
+msgid "Default value"
+msgstr "Значение по умолчанию"
+
+#. translators: placeholders: <strong> tags
+#: international-telephone-input-for-contact-form-7.php:75
+msgid "%1$sInternational Telephone Input for Contact Form 7%2$s addon requires the %1$sContact Form 7%2$s plugin to be activated. Please activate %1$sContact Form 7%2$s and try to activate this addon again."
+msgstr "%1$sРасширение International Telephone Input для Contact Form 7%2$s требует, чтобы был активирован плагин %1$sContact Form 7%2$s. Пожалуйста, активируйте %1$sContact Form 7%2$s и попробуйте активировать это дополнение еще раз."
+
+#: includes/tag.php:87
+msgid "Insert Tag"
+msgstr "Вставить тег"
+
+#: includes/tag.php:51
+msgid "Field width in px (optional)"
+msgstr "Ширина поля в пикселях (необязательно)"
+
+#: includes/tag.php:46
+msgid "Class attribute"
+msgstr "Атрибут класса"
+
+#: includes/tag.php:41
+msgid "ID attribute"
+msgstr "Атрибут ID"
+
+#: includes/tag.php:36
+msgid "Name"
+msgstr "Имя"
+
+#: includes/tag.php:30
+msgid "Required field"
+msgstr "Обязательное поле"
+
+#: includes/tag.php:26 includes/tag.php:29
+msgid "Field type"
+msgstr "Тип поля"
+
+#: includes/tag.php:16
+msgid "Generate a input field for enter international telephone number with a flag dropdown."
+msgstr "Создайте поле input для ввода международного телефонного номера с раскрывающимся флажком."
+
+#: includes/tag.php:8
+msgid "International Telephone"
+msgstr "Международный телефон"
+
+#. translators: 1. Contact Form 7 plugin URL
+#: includes/activation-checks.php:22
+msgid "https://wordpress.org/plugins/contact-form-7/"
+msgstr "https://wordpress.org/plugins/contact-form-7/"
+
+#. translators: 1. Contact Form 7 plugin URL
+#: includes/activation-checks.php:22
+msgid "Sorry, but <strong>Contact Form 7 - International Telephone Input</strong> requires <a href=\"%s\"><strong>Contact Form 7</strong></a> plugin."
+msgstr "Извините, но для <strong>Contact Form 7 - International Telephone Input</strong> требуется плагин <a href=\"%s\"><strong>Contact Form 7</strong></a>"
+
+#. Author of the plugin
+msgid "Damià Rita and Yordan Soares"
+msgstr "Damià Rita и Yordan Soares"
+
+#. Description of the plugin
+msgid "Addon for Contact Form 7 that creates a new type of input for entering and validating international telephone numbers. It adds a flag dropdown, detects the user's country, displays a relevant placeholder and provides formatting/validation methods."
+msgstr "Дополнение для Contact Form 7, которое создает новый тип input для ввода и проверки международных телефонных номеров. Он добавляет раскрывающийся список флагов, определяет страну пользователя, отображает соответствующий заполнитель и предоставляет методы форматирования / проверки."
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://wordpress.org/plugins/international-telephone-input-for-contact-form-7/"
+msgstr "https://wordpress.org/plugins/international-telephone-input-for-contact-form-7/"
+
+#. Plugin Name of the plugin
+msgid "International Telephone Input for Contact Form 7"
+msgstr "International Telephone Input для Contact Form 7"
