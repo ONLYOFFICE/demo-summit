@@ -27,7 +27,7 @@ class Client implements \WPMailSMTP\Vendor\GuzzleHttp\ClientInterface, \WPMailSM
      * default request options to apply to each request:
      *
      *     $client = new Client([
-     *         'base_uri'        => 'https://www.foo.com/1.0/',
+     *         'base_uri'        => 'http://www.foo.com/1.0/',
      *         'timeout'         => 0,
      *         'allow_redirects' => false,
      *         'proxy'           => '192.168.16.1:10'

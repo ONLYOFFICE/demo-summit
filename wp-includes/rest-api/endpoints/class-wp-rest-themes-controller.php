@@ -438,7 +438,7 @@ class WP_REST_Themes_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'theme',
 			'type'       => 'object',
 			'properties' => array(

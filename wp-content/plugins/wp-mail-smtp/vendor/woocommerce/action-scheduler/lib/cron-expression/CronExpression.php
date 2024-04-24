@@ -11,7 +11,7 @@
  * [1-7|MON-SUN], and an optional year.
  *
  * @author Michael Dowling <mtdowling@gmail.com>
- * @link https://en.wikipedia.org/wiki/Cron
+ * @link http://en.wikipedia.org/wiki/Cron
  */
 class CronExpression
 {

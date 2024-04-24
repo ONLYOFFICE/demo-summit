@@ -284,7 +284,7 @@ class WP_REST_Font_Families_Controller extends WP_REST_Posts_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => $this->post_type,
 			'type'       => 'object',
 			// Base properties for every Post.

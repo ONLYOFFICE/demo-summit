@@ -201,7 +201,7 @@ class WPCF7_Mail {
 
 		$header = apply_filters( 'wpcf7_mail_html_header',
 			'<!doctype html>
-<html xmlns="https://www.w3.org/1999/xhtml"' . $lang_atts . '>
+<html xmlns="http://www.w3.org/1999/xhtml"' . $lang_atts . '>
 <head>
 <title>' . esc_html( $this->get( 'subject', true ) ) . '</title>
 </head>

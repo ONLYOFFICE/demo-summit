@@ -69,7 +69,7 @@ function wp_supercache_badbehaviour_admin() {
 		<label><input type="radio" name="cache_badbehaviour" value="1" <?php if ( $cache_badbehaviour ) { echo 'checked="checked" '; } ?>/> <?php _e( 'Enabled', 'wp-super-cache' ); ?></label>
 		<label><input type="radio" name="cache_badbehaviour" value="0" <?php if ( ! $cache_badbehaviour ) { echo 'checked="checked" '; } ?>/> <?php _e( 'Disabled', 'wp-super-cache' ); ?></label>
 		<p><?php _e( '', 'wp-super-cache' ); ?></p><?php
-		echo '<p>' . sprintf( __( '(Only WPCache caching supported, disabled compression and requires <a href="https://www.bad-behavior.ioerror.us/">Bad Behavior</a> in "%s/plugins/bad-behavior/") ', 'wp-super-cache' ), WP_CONTENT_DIR ) . '</p>';
+		echo '<p>' . sprintf( __( '(Only WPCache caching supported, disabled compression and requires <a href="http://www.bad-behavior.ioerror.us/">Bad Behavior</a> in "%s/plugins/bad-behavior/") ', 'wp-super-cache' ), WP_CONTENT_DIR ) . '</p>';
 		if ( isset( $changed ) && $changed ) {
 			if ( $cache_badbehaviour ) {
 				$status = __( 'enabled', 'wp-super-cache' );
@@ -93,7 +93,7 @@ add_cacheaction( 'cache_admin_page', 'wp_supercache_badbehaviour_admin' );
 function wpsc_badbehaviour_list( $list ) {
 	$list['badbehaviour'] = array(
 		'key'   => 'badbehaviour',
-		'url'   => 'https://www.bad-behavior.ioerror.us/',
+		'url'   => 'http://www.bad-behavior.ioerror.us/',
 		'title' => __( 'Bad Behavior', 'wp-super-cache' ),
 		'desc'  => sprintf( __( 'Support for Bad Behavior. (Only WPCache caching supported, disabled compression and requires Bad Behavior in "%s/plugins/bad-behavior/") ', 'wp-super-cache' ), WP_CONTENT_DIR ),
 	);

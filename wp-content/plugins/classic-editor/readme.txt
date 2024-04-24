@@ -6,7 +6,7 @@ Tested up to: 6.2
 Stable tag: 1.6.3
 Requires PHP: 5.2.4
 License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Enables the previous "classic" editor and the old-style Edit Post screen with TinyMCE, Meta Boxes, etc. Supports all plugins that extend this screen.
 

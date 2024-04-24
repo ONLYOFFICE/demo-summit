@@ -23,7 +23,7 @@ interface StreamInterface
      * This method MUST NOT raise an exception in order to conform with PHP's
      * string casting operations.
      *
-     * @see https://php.net/manual/en/language.oop5.magic.php#object.tostring
+     * @see http://php.net/manual/en/language.oop5.magic.php#object.tostring
      * @return string
      */
     public function __toString();
@@ -69,7 +69,7 @@ interface StreamInterface
     /**
      * Seek to a position in the stream.
      *
-     * @link https://www.php.net/manual/en/function.fseek.php
+     * @link http://www.php.net/manual/en/function.fseek.php
      * @param int $offset Stream offset
      * @param int $whence Specifies how the cursor position will be calculated
      *     based on the seek offset. Valid values are identical to the built-in
@@ -86,7 +86,7 @@ interface StreamInterface
      * otherwise, it will perform a seek(0).
      *
      * @see seek()
-     * @link https://www.php.net/manual/en/function.fseek.php
+     * @link http://www.php.net/manual/en/function.fseek.php
      * @throws \RuntimeException on failure.
      */
     public function rewind();
@@ -135,7 +135,7 @@ interface StreamInterface
      * The keys returned are identical to the keys returned from PHP's
      * stream_get_meta_data() function.
      *
-     * @link https://php.net/manual/en/function.stream-get-meta-data.php
+     * @link http://php.net/manual/en/function.stream-get-meta-data.php
      * @param string|null $key Specific metadata to retrieve.
      * @return array|mixed|null Returns an associative array if no key is
      *     provided. Returns a specific key value if a key is provided and the

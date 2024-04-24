@@ -275,7 +275,7 @@ class WP_REST_Response extends WP_HTTP_Response {
 		 * shortened relation.
 		 *
 		 * For example, a CURIE with name `example` and URI template
-		 * `https://w.org/{rel}` would transform a `https://w.org/term` relation
+		 * `http://w.org/{rel}` would transform a `http://w.org/term` relation
 		 * into `example:term`.
 		 *
 		 * Well-behaved clients should expand and normalize these back to their

@@ -792,7 +792,7 @@ class Requests {
 
 				$options['redirected']++;
 				$location = $return->headers['location'];
-				if (strpos($location, 'https://') !== 0 && strpos($location, 'https://') !== 0) {
+				if (strpos($location, 'http://') !== 0 && strpos($location, 'https://') !== 0) {
 					// relative redirect, for compatibility make it absolute
 					$location = Iri::absolutize($url, $location);
 					$location = $location->uri;

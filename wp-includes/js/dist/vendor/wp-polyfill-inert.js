@@ -10,7 +10,7 @@
 
   /**
    * This work is licensed under the W3C Software and Document License
-   * (https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
+   * (http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document).
    */
 
   (function () {

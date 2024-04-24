@@ -61,7 +61,7 @@ function get_wp_cache_key( $url = false ) {
 function wpsc_parse_partial_url( $partial_uri ) {
 	global $WPSC_HTTP_HOST;
 
-	$scheme = wpsc_is_https() ? 'https://' : 'https://';
+	$scheme = wpsc_is_https() ? 'https://' : 'http://';
 	return parse_url( $scheme . $WPSC_HTTP_HOST . $partial_uri );
 }
 
@@ -325,7 +325,7 @@ function wp_cache_serve_cache_file() {
 	}
 
 	foreach ( $meta['headers'] as $t => $header ) {
-		// godaddy fix, via https://blog.gneu.org/2008/05/wp-supercache-on-godaddy/ and https://www.littleredrails.com/blog/2007/09/08/using-wp-cache-on-godaddy-500-error/
+		// godaddy fix, via http://blog.gneu.org/2008/05/wp-supercache-on-godaddy/ and http://www.littleredrails.com/blog/2007/09/08/using-wp-cache-on-godaddy-500-error/
 		if ( strpos( $header, 'Last-Modified:' ) === false ) {
 			header( $header );
 			wp_cache_debug( 'Sending Header: ' . $header );
@@ -798,7 +798,7 @@ function get_supercache_dir( $blog_id = 0 ) {
 	} else {
 		$home = get_blog_option( $blog_id, 'home' );
 	}
-	return trailingslashit( apply_filters( 'wp_super_cache_supercachedir', $cache_path . 'supercache/' . trailingslashit( strtolower( preg_replace( '/:.*$/', '', str_replace( 'https://', '', str_replace( 'https://', '', $home ) ) ) ) ) ) );
+	return trailingslashit( apply_filters( 'wp_super_cache_supercachedir', $cache_path . 'supercache/' . trailingslashit( strtolower( preg_replace( '/:.*$/', '', str_replace( 'http://', '', str_replace( 'https://', '', $home ) ) ) ) ) ) );
 }
 function get_current_url_supercache_dir( $post_id = 0 ) {
 	global $cached_direct_pages, $cache_path, $wp_cache_request_uri, $WPSC_HTTP_HOST, $wp_cache_home_path;
@@ -1332,7 +1332,7 @@ function wpsc_delete_url_cache( $url ) {
 	}
 }
 
-// from legolas558 d0t users dot sf dot net at https://www.php.net/is_writable
+// from legolas558 d0t users dot sf dot net at http://www.php.net/is_writable
 function is_writeable_ACLSafe( $path ) {
 
 	if (
@@ -2420,7 +2420,7 @@ function wp_cache_get_ob( &$buffer ) {
 	if ( $wp_cache_mfunc_enabled == 1 ) {
 		if ( preg_match( '/<!--mclude|<!--mfunc|<!--dynamic-cached-content-->/', $buffer ) ) { // Dynamic content
 			wp_cache_debug( 'mfunc/mclude/dynamic-cached-content tags have been retired. Please update your theme. See docs for updates.' );
-			wp_cache_add_to_buffer( $buffer, 'Warning! Obsolete mfunc/mclude/dynamic-cached-content tags found. Please update your theme. See https://ocaoimh.ie/y/5b for more information.' );
+			wp_cache_add_to_buffer( $buffer, 'Warning! Obsolete mfunc/mclude/dynamic-cached-content tags found. Please update your theme. See http://ocaoimh.ie/y/5b for more information.' );
 		}
 
 		global $wp_super_cache_late_init;
@@ -3003,7 +3003,7 @@ function wp_cache_get_postid_from_comment( $comment_id, $status = 'NA' ) {
 	}
 	$postid = isset( $comment['comment_post_ID'] ) ? (int) $comment['comment_post_ID'] : 0;
 	// Do nothing if comment is not moderated
-	// https://ocaoimh.ie/2006/12/05/caching-wordpress-with-wp-cache-in-a-spam-filled-world
+	// http://ocaoimh.ie/2006/12/05/caching-wordpress-with-wp-cache-in-a-spam-filled-world
 	if ( ! preg_match( '/wp-admin\//', $wp_cache_request_uri ) ) {
 		if ( $comment['comment_approved'] == 'delete' && ( isset( $comment['old_comment_approved'] ) && $comment['old_comment_approved'] == 0 ) ) { // do nothing if moderated comments are deleted
 			wp_cache_debug( "Moderated comment deleted. Don't delete any cache files.", 4 );
@@ -3434,7 +3434,7 @@ function maybe_stop_gc( $flag ) {
 }
 function get_gc_flag() {
 	global $cache_path;
-	return $cache_path . strtolower( preg_replace( '!/:.*$!', '', str_replace( 'https://', '', str_replace( 'https://', '', get_option( 'home' ) ) ) ) ) . '_wp_cache_gc.txt';
+	return $cache_path . strtolower( preg_replace( '!/:.*$!', '', str_replace( 'http://', '', str_replace( 'https://', '', get_option( 'home' ) ) ) ) ) . '_wp_cache_gc.txt';
 }
 
 function wp_cache_gc_cron() {
@@ -3555,7 +3555,7 @@ function wpsc_is_get_query() {
 if ( ! function_exists( 'apache_request_headers' ) ) {
 	/**
 	 * A fallback for get request headers.
-	 * Based on comments from https://php.net/manual/en/function.apache-request-headers.php
+	 * Based on comments from http://php.net/manual/en/function.apache-request-headers.php
 	 *
 	 * @return array List of request headers
 	 */

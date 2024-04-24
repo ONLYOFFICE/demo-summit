@@ -184,7 +184,7 @@ function as_schedule_recurring_action( $timestamp, $interval_in_seconds, $hook, 
  *           to run at a time calculated after this timestamp matching the cron
  *           expression. This can be used to delay the first instance of the action.
  * @param string $schedule A cron-link schedule string.
- * @see https://en.wikipedia.org/wiki/Cron
+ * @see http://en.wikipedia.org/wiki/Cron
  *   *    *    *    *    *    *
  *   ┬    ┬    ┬    ┬    ┬    ┬
  *   |    |    |    |    |    |
@@ -476,8 +476,8 @@ function as_get_scheduled_actions( $args = array(), $return_format = OBJECT ) {
  * timezone when instantiating datetimes rather than leaving it up to
  * the PHP default.
  *
- * @param mixed  $date_string A date/time string. Valid formats are explained in https://php.net/manual/en/datetime.formats.php.
- * @param string $timezone A timezone identifier, like UTC or Europe/Lisbon. The list of valid identifiers is available https://php.net/manual/en/timezones.php.
+ * @param mixed  $date_string A date/time string. Valid formats are explained in http://php.net/manual/en/datetime.formats.php.
+ * @param string $timezone A timezone identifier, like UTC or Europe/Lisbon. The list of valid identifiers is available http://php.net/manual/en/timezones.php.
  *
  * @return ActionScheduler_DateTime
  */

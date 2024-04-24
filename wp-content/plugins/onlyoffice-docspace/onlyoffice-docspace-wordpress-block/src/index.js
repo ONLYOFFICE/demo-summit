@@ -35,7 +35,7 @@ export const onlyofficeIcon = (
         height="60"
         viewBox="0 0 66 60"
         fill="black"
-        xmlns="https://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg"
     >
         <path
             opacity="0.5"

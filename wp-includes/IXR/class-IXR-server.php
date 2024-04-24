@@ -161,15 +161,15 @@ EOD;
         // Initialises capabilities array
         $this->capabilities = array(
             'xmlrpc' => array(
-                'specUrl' => 'https://www.xmlrpc.com/spec',
+                'specUrl' => 'http://www.xmlrpc.com/spec',
                 'specVersion' => 1
         ),
             'faults_interop' => array(
-                'specUrl' => 'https://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php',
+                'specUrl' => 'http://xmlrpc-epi.sourceforge.net/specs/rfc.fault_codes.php',
                 'specVersion' => 20010516
         ),
             'system.multicall' => array(
-                'specUrl' => 'https://www.xmlrpc.com/discuss/msgReader$1208',
+                'specUrl' => 'http://www.xmlrpc.com/discuss/msgReader$1208',
                 'specVersion' => 1
         ),
         );
@@ -196,7 +196,7 @@ EOD;
 
     function multiCall($methodcalls)
     {
-        // See https://www.xmlrpc.com/discuss/msgReader$1208
+        // See http://www.xmlrpc.com/discuss/msgReader$1208
         $return = array();
         foreach ($methodcalls as $call) {
             $method = $call['methodName'];

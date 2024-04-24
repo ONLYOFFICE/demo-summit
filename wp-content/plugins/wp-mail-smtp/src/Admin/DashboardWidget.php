@@ -536,7 +536,7 @@ class DashboardWidget {
 		?>
 		<div class="wp-mail-smtp-dash-widget-settings-container">
 			<button id="wp-mail-smtp-dash-widget-settings-button" class="wp-mail-smtp-dash-widget-settings-button button" type="button">
-				<svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 19 19">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19">
 					<path d="M18,11l-2.18,0c-0.17,0.7 -0.44,1.35 -0.81,1.93l1.54,1.54l-2.1,2.1l-1.54,-1.54c-0.58,0.36 -1.23,0.63 -1.91,0.79l0,2.18l-3,0l0,-2.18c-0.68,-0.16 -1.33,-0.43 -1.91,-0.79l-1.54,1.54l-2.12,-2.12l1.54,-1.54c-0.36,-0.58 -0.63,-1.23 -0.79,-1.91l-2.18,0l0,-2.97l2.17,0c0.16,-0.7 0.44,-1.35 0.8,-1.94l-1.54,-1.54l2.1,-2.1l1.54,1.54c0.58,-0.37 1.24,-0.64 1.93,-0.81l0,-2.18l3,0l0,2.18c0.68,0.16 1.33,0.43 1.91,0.79l1.54,-1.54l2.12,2.12l-1.54,1.54c0.36,0.59 0.64,1.24 0.8,1.94l2.17,0l0,2.97Zm-8.5,1.5c1.66,0 3,-1.34 3,-3c0,-1.66 -1.34,-3 -3,-3c-1.66,0 -3,1.34 -3,3c0,1.66 1.34,3 3,3Z"></path>
 				</svg>
 			</button>

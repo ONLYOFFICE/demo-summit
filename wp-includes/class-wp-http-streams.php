@@ -71,7 +71,7 @@ class WP_Http_Streams {
 			}
 		}
 
-		// Always pass a path, defaulting to the root in cases such as https://example.com.
+		// Always pass a path, defaulting to the root in cases such as http://example.com.
 		if ( ! isset( $parsed_url['path'] ) ) {
 			$parsed_url['path'] = '/';
 		}

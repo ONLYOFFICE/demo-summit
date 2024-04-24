@@ -124,7 +124,7 @@ class WP_REST_Navigation_Fallback_Controller extends WP_REST_Controller {
 		}
 
 		$this->schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'navigation-fallback',
 			'type'       => 'object',
 			'properties' => array(

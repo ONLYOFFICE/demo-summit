@@ -42,7 +42,7 @@ if ( $cache_enabled ) {
 	if ( array_key_exists( 'action', $_POST ) && 'test' === $_POST['action'] && $valid_nonce ) {
 		$url = trailingslashit( get_bloginfo( 'url' ) );
 		if ( isset( $_POST['httponly'] ) ) {
-			$url = str_replace( 'https://', 'https://', $url );
+			$url = str_replace( 'https://', 'http://', $url );
 		}
 		$test_messages    = array( esc_html__( 'Fetching %s to prime cache: ', 'wp-super-cache' ), esc_html__( 'Fetching first copy of %s: ', 'wp-super-cache' ), esc_html__( 'Fetching second copy of %s: ', 'wp-super-cache' ) );
 		$c                = 0;

@@ -46,7 +46,7 @@ function wc_schedule_recurring_action( $timestamp, $interval_in_seconds, $hook, 
  *
  * @param int $timestamp The schedule will start on or after this time
  * @param string $schedule A cron-link schedule string
- * @see https://en.wikipedia.org/wiki/Cron
+ * @see http://en.wikipedia.org/wiki/Cron
  *   *    *    *    *    *    *
  *   ┬    ┬    ┬    ┬    ┬    ┬
  *   |    |    |    |    |    |

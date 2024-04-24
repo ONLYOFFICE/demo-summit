@@ -440,8 +440,8 @@ class WPSEO_Utils {
 	 *
 	 * In the rare case that the bcmath extension would not be loaded, it will return the normal calculation results.
 	 *
-	 * @link https://floating-point-gui.de/
-	 * @link https://php.net/language.types.float.php See the big red warning.
+	 * @link http://floating-point-gui.de/
+	 * @link http://php.net/language.types.float.php See the big red warning.
 	 *
 	 * @since 1.5.0
 	 * @since 1.8.0 Moved from stand-alone function to this class.

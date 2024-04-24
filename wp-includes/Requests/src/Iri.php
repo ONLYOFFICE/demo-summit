@@ -50,7 +50,7 @@ use WpOrg\Requests\Utility\InputValidator;
  * @author Steve Minutillo
  * @copyright 2007-2009 Geoffrey Sneddon and Steve Minutillo
  * @license https://opensource.org/licenses/bsd-license.php
- * @link https://hg.gsnedders.com/iri/
+ * @link http://hg.gsnedders.com/iri/
  *
  * @property string $iri IRI we're working with
  * @property-read string $uri IRI in URI form, {@see \WpOrg\Requests\Iri::to_uri()}

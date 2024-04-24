@@ -595,7 +595,7 @@ function gtm4wp_wp_loaded() {
 		if ( false === $geodata ) {
 			$gtm4wp_geodata = wp_remote_get(
 				esc_url(
-					'https://api.ipstack.com/' .
+					'http://api.ipstack.com/' .
 					rawurlencode( $client_ip ) .
 					'?access_key=' . $gtm4wp_options[ GTM4WP_OPTION_INCLUDE_MISCGEOAPI ] .
 					'&format=1'
@@ -613,7 +613,7 @@ function gtm4wp_wp_loaded() {
 
 						$weatherdata = wp_remote_get(
 							esc_url(
-								'https://api.openweathermap.org/data/2.5/weather?appid=' .
+								'http://api.openweathermap.org/data/2.5/weather?appid=' .
 								$gtm4wp_options[ GTM4WP_OPTION_INCLUDE_WEATHEROWMAPI ] .
 								'&lat=' . $gtm4wp_geodata->latitude .
 								'&lon=' . $gtm4wp_geodata->longitude .

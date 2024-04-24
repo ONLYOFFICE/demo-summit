@@ -1,7 +1,7 @@
 <?php
 /**
 ** Retrieve list data from the Listo plugin.
-** Listo https://wordpress.org/plugins/listo/
+** Listo http://wordpress.org/plugins/listo/
 **/
 
 add_filter( 'wpcf7_form_tag_data_option', 'wpcf7_listo', 10, 3 );

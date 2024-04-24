@@ -9,7 +9,7 @@
  * Author:      WordPress Contributors
  * Author URI:  https://github.com/WordPress/classic-editor/
  * License:     GPLv2 or later
- * License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * License URI: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain: classic-editor
  * Domain Path: /languages
  * Requires at least: 4.9

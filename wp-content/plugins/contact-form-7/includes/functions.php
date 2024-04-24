@@ -467,7 +467,7 @@ function wpcf7_build_query( $args, $key = '' ) {
 /**
  * Returns the number of code units in a string.
  *
- * @link https://www.w3.org/TR/html5/infrastructure.html#code-unit-length
+ * @link http://www.w3.org/TR/html5/infrastructure.html#code-unit-length
  *
  * @param string $text Input string.
  * @return int|bool The number of code units, or false if

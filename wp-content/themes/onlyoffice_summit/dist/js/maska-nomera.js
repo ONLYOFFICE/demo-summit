@@ -5,7 +5,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
 /*
     jQuery Masked Input Plugin
     Copyright (c) 2007 - 2015 Josh Bush (digitalbush.com)
-    Licensed under the MIT license (https://digitalbush.com/projects/masked-input-plugin/#license)
+    Licensed under the MIT license (http://digitalbush.com/projects/masked-input-plugin/#license)
     Version: 1.4.1
 */
 !function (a) {

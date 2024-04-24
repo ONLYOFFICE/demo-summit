@@ -511,7 +511,7 @@ class WP_REST_Global_Styles_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => $this->post_type,
 			'type'       => 'object',
 			'properties' => array(

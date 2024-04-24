@@ -652,8 +652,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * Added Ukranian translation by Vitaly Mylo.
 * Added Upgrade Notice section to readme.
 * Warn if zlib compression in PHP is enabled.
-* Added compression troubleshooting answer. Props Vladimir (https://blog.sjinks.pro/)
-* Added Japanese translation by Tai (https://tekapo.com/)
+* Added compression troubleshooting answer. Props Vladimir (http://blog.sjinks.pro/)
+* Added Japanese translation by Tai (http://tekapo.com/)
 * Updated Italian translation.
 * Link to WP Mobile Edition from admin page for mobile support.
 

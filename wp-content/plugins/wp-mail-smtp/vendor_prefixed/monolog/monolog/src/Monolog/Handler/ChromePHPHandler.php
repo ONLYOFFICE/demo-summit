@@ -14,7 +14,7 @@ use WPMailSMTP\Vendor\Monolog\Formatter\ChromePHPFormatter;
 use WPMailSMTP\Vendor\Monolog\Logger;
 use WPMailSMTP\Vendor\Monolog\Utils;
 /**
- * Handler sending logs to the ChromePHP extension (https://www.chromephp.com/)
+ * Handler sending logs to the ChromePHP extension (http://www.chromephp.com/)
  *
  * This also works out of the box with Firefox 43+
  *

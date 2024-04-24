@@ -3713,7 +3713,7 @@ function network_site_url( $path = '', $scheme = null ) {
 	if ( 'relative' === $scheme ) {
 		$url = $current_network->path;
 	} else {
-		$url = set_url_scheme( 'https://' . $current_network->domain . $current_network->path, $scheme );
+		$url = set_url_scheme( 'http://' . $current_network->domain . $current_network->path, $scheme );
 	}
 
 	if ( $path && is_string( $path ) ) {
@@ -3763,7 +3763,7 @@ function network_home_url( $path = '', $scheme = null ) {
 	if ( 'relative' === $scheme ) {
 		$url = $current_network->path;
 	} else {
-		$url = set_url_scheme( 'https://' . $current_network->domain . $current_network->path, $scheme );
+		$url = set_url_scheme( 'http://' . $current_network->domain . $current_network->path, $scheme );
 	}
 
 	if ( $path && is_string( $path ) ) {
@@ -4520,7 +4520,7 @@ function get_avatar_data( $id_or_email, $args = null ) {
 	if ( is_ssl() ) {
 		$url = 'https://secure.gravatar.com/avatar/' . $email_hash;
 	} else {
-		$url = sprintf( 'https://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
+		$url = sprintf( 'http://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
 	}
 
 	$url = add_query_arg(

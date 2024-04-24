@@ -4,7 +4,7 @@
 /// getID3() by James Heinrich <info@getid3.org>               //
 //  available at https://github.com/JamesHeinrich/getID3       //
 //            or https://www.getid3.org                        //
-//            or https://getid3.sourceforge.net                 //
+//            or http://getid3.sourceforge.net                 //
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
@@ -22,7 +22,7 @@ getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.flac.php', __FILE
 class getid3_ogg extends getid3_handler
 {
 	/**
-	 * @link https://xiph.org/vorbis/doc/Vorbis_I_spec.html
+	 * @link http://xiph.org/vorbis/doc/Vorbis_I_spec.html
 	 *
 	 * @return bool
 	 */
@@ -78,7 +78,7 @@ class getid3_ogg extends getid3_handler
 
 		} elseif (substr($filedata, 0, 8) == 'Speex   ') {
 
-			// https://www.speex.org/manual/node10.html
+			// http://www.speex.org/manual/node10.html
 
 			$info['audio']['dataformat']   = 'speex';
 			$info['mime_type']             = 'audio/speex';
@@ -130,7 +130,7 @@ class getid3_ogg extends getid3_handler
 
 		} elseif (substr($filedata, 0, 7) == "\x80".'theora') {
 
-			// https://www.theora.org/doc/Theora.pdf (section 6.2)
+			// http://www.theora.org/doc/Theora.pdf (section 6.2)
 
 			$info['ogg']['pageheader']['theora']['theora_magic']             =                           substr($filedata, $filedataoffset,  7); // hard-coded to "\x80.'theora'
 			$filedataoffset += 7;
@@ -192,7 +192,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 		} elseif (substr($filedata, 0, 8) == "fishead\x00") {
 
 			// Ogg Skeleton version 3.0 Format Specification
-			// https://xiph.org/ogg/doc/skeleton.html
+			// http://xiph.org/ogg/doc/skeleton.html
 			$filedataoffset += 8;
 			$info['ogg']['skeleton']['fishead']['raw']['version_major']                = getid3_lib::LittleEndian2Int(substr($filedata, $filedataoffset,  2));
 			$filedataoffset += 2;
@@ -466,7 +466,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 	}
 
 	/**
-	 * @link https://tools.ietf.org/html/draft-ietf-codec-oggopus-03
+	 * @link http://tools.ietf.org/html/draft-ietf-codec-oggopus-03
 	 *
 	 * @param string $filedata
 	 * @param int    $filedataoffset
@@ -528,7 +528,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 	 * @return array|false
 	 */
 	public function ParseOggPageHeader() {
-		// https://xiph.org/ogg/vorbis/doc/framing.html
+		// http://xiph.org/ogg/vorbis/doc/framing.html
 		$oggheader = array();
 		$oggheader['page_start_offset'] = $this->ftell(); // where we started from in the file
 
@@ -580,7 +580,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 	}
 
 	/**
-	 * @link https://xiph.org/vorbis/doc/Vorbis_I_spec.html#x1-810005
+	 * @link http://xiph.org/vorbis/doc/Vorbis_I_spec.html#x1-810005
 	 *
 	 * @return bool
 	 */
@@ -732,9 +732,9 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 
 				if ($ThisFileInfo_ogg_comments_raw[$i]['key'] == 'METADATA_BLOCK_PICTURE') {
 
-					// https://wiki.xiph.org/VorbisComment#METADATA_BLOCK_PICTURE
+					// http://wiki.xiph.org/VorbisComment#METADATA_BLOCK_PICTURE
 					// The unencoded format is that of the FLAC picture block. The fields are stored in big endian order as in FLAC, picture data is stored according to the relevant standard.
-					// https://flac.sourceforge.net/format.html#metadata_block_picture
+					// http://flac.sourceforge.net/format.html#metadata_block_picture
 					$flac = new getid3_flac($this->getid3);
 					$flac->setStringMode(base64_decode($ThisFileInfo_ogg_comments_raw[$i]['value']));
 					$flac->parsePICTURE();
@@ -781,7 +781,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 
 
 		// Replay Gain Adjustment
-		// https://privatewww.essex.ac.uk/~djmrob/replaygain/
+		// http://privatewww.essex.ac.uk/~djmrob/replaygain/
 		if (isset($info['ogg']['comments']) && is_array($info['ogg']['comments'])) {
 			foreach ($info['ogg']['comments'] as $index => $commentvalue) {
 				switch ($index) {
@@ -894,7 +894,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 	 * @return string|null
 	 */
 	public static function TheoraColorSpace($colorspace_id) {
-		// https://www.theora.org/doc/Theora.pdf (table 6.3)
+		// http://www.theora.org/doc/Theora.pdf (table 6.3)
 		static $TheoraColorSpaceLookup = array();
 		if (empty($TheoraColorSpaceLookup)) {
 			$TheoraColorSpaceLookup[0] = 'Undefined';
@@ -911,7 +911,7 @@ $this->warning('Ogg Theora (v3) not fully supported in this version of getID3 ['
 	 * @return string|null
 	 */
 	public static function TheoraPixelFormat($pixelformat_id) {
-		// https://www.theora.org/doc/Theora.pdf (table 6.4)
+		// http://www.theora.org/doc/Theora.pdf (table 6.4)
 		static $TheoraPixelFormatLookup = array();
 		if (empty($TheoraPixelFormatLookup)) {
 			$TheoraPixelFormatLookup[0] = '4:2:0';

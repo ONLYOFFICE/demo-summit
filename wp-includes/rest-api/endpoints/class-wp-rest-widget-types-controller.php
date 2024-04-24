@@ -384,7 +384,7 @@ class WP_REST_Widget_Types_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'widget-type',
 			'type'       => 'object',
 			'properties' => array(

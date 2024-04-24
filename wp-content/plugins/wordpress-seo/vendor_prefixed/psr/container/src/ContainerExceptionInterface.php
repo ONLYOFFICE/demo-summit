@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @license https://www.opensource.org/licenses/mit-license.php MIT (see the LICENSE file)
+ * @license http://www.opensource.org/licenses/mit-license.php MIT (see the LICENSE file)
  */
 namespace YoastSEO_Vendor\Psr\Container;
 

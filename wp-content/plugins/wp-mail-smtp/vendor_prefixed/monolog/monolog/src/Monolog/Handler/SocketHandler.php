@@ -15,7 +15,7 @@ use WPMailSMTP\Vendor\Monolog\Logger;
  * Stores to any socket - uses fsockopen() or pfsockopen().
  *
  * @author Pablo de Leon Belloc <pablolb@gmail.com>
- * @see    https://php.net/manual/en/function.fsockopen.php
+ * @see    http://php.net/manual/en/function.fsockopen.php
  */
 class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessingHandler
 {
@@ -88,7 +88,7 @@ class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessin
      *
      * @param float $seconds
      *
-     * @see https://php.net/manual/en/function.fsockopen.php
+     * @see http://php.net/manual/en/function.fsockopen.php
      */
     public function setConnectionTimeout($seconds)
     {
@@ -100,7 +100,7 @@ class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessin
      *
      * @param float $seconds
      *
-     * @see https://php.net/manual/en/function.stream-set-timeout.php
+     * @see http://php.net/manual/en/function.stream-set-timeout.php
      */
     public function setTimeout($seconds)
     {
@@ -183,7 +183,7 @@ class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessin
     /**
      * Check to see if the socket is currently available.
      *
-     * UDP might appear to be connected but might fail when writing.  See https://php.net/fsockopen for details.
+     * UDP might appear to be connected but might fail when writing.  See http://php.net/fsockopen for details.
      *
      * @return bool
      */
@@ -209,7 +209,7 @@ class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessin
     /**
      * Wrapper to allow mocking
      *
-     * @see https://php.net/manual/en/function.stream-set-timeout.php
+     * @see http://php.net/manual/en/function.stream-set-timeout.php
      */
     protected function streamSetTimeout()
     {
@@ -220,7 +220,7 @@ class SocketHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessin
     /**
      * Wrapper to allow mocking
      *
-     * @see https://php.net/manual/en/function.stream-set-chunk-size.php
+     * @see http://php.net/manual/en/function.stream-set-chunk-size.php
      */
     protected function streamSetChunkSize()
     {

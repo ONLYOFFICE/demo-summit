@@ -35,9 +35,9 @@ if ( ! is_multisite() ) {
 			__( 'https://wordpress.org/documentation/article/giving-wordpress-its-own-directory/' )
 		) . '</p>' .
 		'<p>' . sprintf(
-			/* translators: 1: https://, 2: https:// */
+			/* translators: 1: http://, 2: https:// */
 			__( 'Both WordPress URL and site URL can start with either %1$s or %2$s. A URL starting with %2$s requires an SSL certificate, so be sure that you have one before changing to %2$s. With %2$s, a padlock will appear next to the address in the browser address bar. Both %2$s and the padlock signal that your site meets some basic security requirements, which can build trust with your visitors and with search engines.' ),
-			'<code>https://</code>',
+			'<code>http://</code>',
 			'<code>https://</code>'
 		) . '</p>' .
 		'<p>' . __( 'If you want site visitors to be able to register themselves, check the membership box. If you want the site administrator to register every new user, leave the box unchecked. In either case, you can set a default user role for all new users.' ) . '</p>';

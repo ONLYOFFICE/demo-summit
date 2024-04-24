@@ -206,7 +206,7 @@ class WP_REST_Block_Renderer_Controller extends WP_REST_Controller {
 		}
 
 		$this->schema = array(
-			'$schema'    => 'https://json-schema.org/schema#',
+			'$schema'    => 'http://json-schema.org/schema#',
 			'title'      => 'rendered-block',
 			'type'       => 'object',
 			'properties' => array(

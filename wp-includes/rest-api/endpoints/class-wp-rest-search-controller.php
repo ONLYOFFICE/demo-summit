@@ -246,7 +246,7 @@ class WP_REST_Search_Controller extends WP_REST_Controller {
 		$subtypes = array_unique( $subtypes );
 
 		$schema = array(
-			'$schema'    => 'https://json-schema.org/draft-04/schema#',
+			'$schema'    => 'http://json-schema.org/draft-04/schema#',
 			'title'      => 'search-result',
 			'type'       => 'object',
 			'properties' => array(

@@ -53,7 +53,7 @@ interface RequestInterface extends \WPMailSMTP\Vendor\Psr\Http\Message\MessageIn
      * immutability of the message, and MUST return an instance that has the
      * changed request target.
      *
-     * @link https://tools.ietf.org/html/rfc7230#section-5.3 (for the various
+     * @link http://tools.ietf.org/html/rfc7230#section-5.3 (for the various
      *     request-target forms allowed in request messages)
      * @param string $requestTarget
      * @return static
@@ -86,7 +86,7 @@ interface RequestInterface extends \WPMailSMTP\Vendor\Psr\Http\Message\MessageIn
      *
      * This method MUST return a UriInterface instance.
      *
-     * @link https://tools.ietf.org/html/rfc3986#section-4.3
+     * @link http://tools.ietf.org/html/rfc3986#section-4.3
      * @return UriInterface Returns a UriInterface instance
      *     representing the URI of the request.
      */
@@ -116,7 +116,7 @@ interface RequestInterface extends \WPMailSMTP\Vendor\Psr\Http\Message\MessageIn
      * immutability of the message, and MUST return an instance that has the
      * new UriInterface instance.
      *
-     * @link https://tools.ietf.org/html/rfc3986#section-4.3
+     * @link http://tools.ietf.org/html/rfc3986#section-4.3
      * @param UriInterface $uri New request URI to use.
      * @param bool $preserveHost Preserve the original state of the Host header.
      * @return static

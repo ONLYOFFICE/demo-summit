@@ -3048,7 +3048,7 @@ function pingback( $content, $post ) {
 	require_once ABSPATH . WPINC . '/class-IXR.php';
 	require_once ABSPATH . WPINC . '/class-wp-http-ixr-client.php';
 
-	// Original code by Mort (https://mort.mine.nu:8080).
+	// Original code by Mort (http://mort.mine.nu:8080).
 	$post_links = array();
 
 	$post = get_post( $post );
@@ -3074,9 +3074,9 @@ function pingback( $content, $post ) {
 	 * Walking through the links array.
 	 * First we get rid of links pointing to sites, not to specific files.
 	 * Example:
-	 * https://dummy-weblog.org
-	 * https://dummy-weblog.org/
-	 * https://dummy-weblog.org/post.php
+	 * http://dummy-weblog.org
+	 * http://dummy-weblog.org/
+	 * http://dummy-weblog.org/post.php
 	 * We don't wanna ping first and second types, even if they have a valid <link/>.
 	 */
 	foreach ( (array) $post_links_temp as $link_test ) {

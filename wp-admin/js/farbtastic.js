@@ -3,7 +3,7 @@
  * https://github.com/mattfarina/farbtastic
  *
  * Licensed under the GPL license:
- *   https://www.gnu.org/licenses/gpl.html
+ *   http://www.gnu.org/licenses/gpl.html
  */
 /**
  * Modified for WordPress: replaced deprecated jQuery methods.

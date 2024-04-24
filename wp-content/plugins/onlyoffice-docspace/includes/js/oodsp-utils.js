@@ -97,7 +97,7 @@ window.wp = window.wp || {};
 	wp.oodsp.getAbsoluteUrl = function ( url ) {
 		docSpaceUrl = _oodsp.docspaceUrl.endsWith( "/" ) ? _oodsp.docspaceUrl.slice( 0, -1 ) : _oodsp.docspaceUrl;
 
-		if ( url.startsWith( "https://" ) || url.startsWith( "https://" ) ) {
+		if ( url.startsWith( "http://" ) || url.startsWith( "https://" ) ) {
 				var origin = new URL( url ).origin;
 				url        = url.replace( origin, docSpaceUrl );
 		} else {
