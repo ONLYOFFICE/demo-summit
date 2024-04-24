@@ -20,7 +20,7 @@ This program incorporates work covered by the following copyright and
 permission notices:
 
     b2 is (c) 2001, 2002 Michel Valdrighi - m@tidakada.com -
-    http://tidakada.com
+    https://tidakada.com
 
     Wherever third party code has been used, credit has been given in the code's
     comments.
@@ -396,5 +396,5 @@ into proprietary programs. If your program is a subroutine library,
 you may consider it more useful to permit linking proprietary
 applications with the library. If this is what you want to do, use the
 [GNU Lesser General Public
-License](http://www.gnu.org/licenses/lgpl.html) instead of this
+License](https://www.gnu.org/licenses/lgpl.html) instead of this
 License.

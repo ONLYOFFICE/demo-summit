@@ -1240,7 +1240,7 @@ if ( ! function_exists( 'auth_redirect' ) ) :
 		if ( str_contains( $_SERVER['REQUEST_URI'], '/options.php' ) && wp_get_referer() ) {
 			$redirect = wp_get_referer();
 		} else {
-			$redirect = set_url_scheme( 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
+			$redirect = set_url_scheme( 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
 		}
 
 		$login_url = wp_login_url( $redirect, true );
@@ -1570,7 +1570,7 @@ if ( ! function_exists( 'wp_validate_redirect' ) ) :
 		}
 
 		/*
-		 * In PHP 5 parse_url() may fail if the URL query part contains 'http://'.
+		 * In PHP 5 parse_url() may fail if the URL query part contains 'https://'.
 		 * See https://bugs.php.net/bug.php?id=38143
 		 */
 		$cut  = strpos( $location, '?' );
@@ -1591,7 +1591,7 @@ if ( ! function_exists( 'wp_validate_redirect' ) ) :
 		if ( ! isset( $lp['host'] ) && ! empty( $lp['path'] ) && '/' !== $lp['path'][0] ) {
 			$path = '';
 			if ( ! empty( $_SERVER['REQUEST_URI'] ) ) {
-				$path = dirname( parse_url( 'http://placeholder' . $_SERVER['REQUEST_URI'], PHP_URL_PATH ) . '?' );
+				$path = dirname( parse_url( 'https://placeholder' . $_SERVER['REQUEST_URI'], PHP_URL_PATH ) . '?' );
 				$path = wp_normalize_path( $path );
 			}
 			$location = '/' . ltrim( $path . '/', '/' ) . $location;

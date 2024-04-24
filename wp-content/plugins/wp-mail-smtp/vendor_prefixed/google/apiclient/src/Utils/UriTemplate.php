@@ -7,7 +7,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -19,7 +19,7 @@ namespace WPMailSMTP\Vendor\Google\Utils;
 
 /**
  * Implementation of levels 1-3 of the URI Template spec.
- * @see http://tools.ietf.org/html/rfc6570
+ * @see https://tools.ietf.org/html/rfc6570
  */
 class UriTemplate
 {

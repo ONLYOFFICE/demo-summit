@@ -139,7 +139,7 @@ function wpseo_register_var_replacement( $replacevar_name, $replace_function, $t
  *
  * It adds new keys to a wpml-config.xml file for a custom post type title, metadesc,
  * title-ptarchive and metadesc-ptarchive fields translation.
- * Documentation: http://wpml.org/documentation/support/language-configuration-files/
+ * Documentation: https://wpml.org/documentation/support/language-configuration-files/
  *
  * @global $sitepress
  *

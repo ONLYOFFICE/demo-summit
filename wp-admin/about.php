@@ -166,7 +166,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns">
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="6" fill="#ededed"/>
 						<path d="M18.9167 16.5C18.2757 16.5 17.661 16.7546 17.2078 17.2078C16.7546 17.661 16.5 18.2757 16.5 18.9167V21.3333H18.3125V18.9167C18.3125 18.7564 18.3762 18.6028 18.4895 18.4895C18.6028 18.3762 18.7564 18.3125 18.9167 18.3125H21.3333V16.5H18.9167ZM21.3333 29.1875H18.9167C18.7564 29.1875 18.6028 29.1238 18.4895 29.0105C18.3762 28.8972 18.3125 28.7436 18.3125 28.5833V26.1667H16.5V28.5833C16.5 29.2243 16.7546 29.839 17.2078 30.2922C17.661 30.7454 18.2757 31 18.9167 31H21.3333V29.1875ZM26.1667 31V29.1875H28.5833C28.7436 29.1875 28.8972 29.1238 29.0105 29.0105C29.1238 28.8972 29.1875 28.7436 29.1875 28.5833V26.1667H31V28.5833C31 29.2243 30.7454 29.839 30.2922 30.2922C29.839 30.7454 29.2243 31 28.5833 31H26.1667ZM28.5833 16.5C29.2243 16.5 29.839 16.7546 30.2922 17.2078C30.7454 17.661 31 18.2757 31 18.9167V21.3333H29.1875V18.9167C29.1875 18.7564 29.1238 18.6028 29.0105 18.4895C28.8972 18.3762 28.7436 18.3125 28.5833 18.3125H26.1667V16.5H28.5833Z" fill="#1e1e1e"/>
 					</svg>
@@ -176,7 +176,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="6" fill="#ededed"/>
 						<path d="M18.95 19.45H27.15L25.45 21.25L26.55 22.35L30.15 18.75L26.65 14.75L25.55 15.75L27.45 18.05H18.95C18.05 18.05 17.25 18.35 16.65 18.95C15.25 20.45 15.25 23.15 15.25 24.55V24.75H16.75V24.45C16.75 23.35 16.75 20.95 17.75 19.95C18.05 19.65 18.45 19.45 18.95 19.45ZM32.75 23.45V23.25H31.25V23.55C31.25 24.65 31.25 27.05 30.25 28.05C29.95 28.35 29.55 28.55 28.95 28.55H20.75L22.45 26.85L21.35 25.75L17.85 29.25L21.35 33.25L22.45 32.25L20.55 29.95H28.95C29.85 29.95 30.65 29.65 31.25 29.05C32.75 27.65 32.75 24.85 32.75 23.45Z" fill="#1e1e1e"/>
 					</svg>
@@ -189,7 +189,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns">
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="6" fill="#ededed"/>
 						<path d="M33 18.75H23.1925C22.7954 17.7305 21.7239 17 20.4643 17C19.2047 17 18.1332 17.7305 17.736 18.75H15V20.5H17.736C18.1332 21.5195 19.2047 22.25 20.4643 22.25C21.7239 22.25 22.7954 21.5195 23.1925 20.5H33V18.75Z" fill="#1e1e1e"/>
 						<path d="M33 27.5H30.264C29.8668 26.4805 28.7953 25.75 27.5357 25.75C26.2761 25.75 25.2046 26.4805 24.8075 27.5H15V29.25H24.8075C25.2046 30.2695 26.2761 31 27.5357 31C28.7953 31 29.8668 30.2695 30.264 29.25H33V27.5Z" fill="#1e1e1e"/>
@@ -200,7 +200,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="6" fill="#ededed"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M22.5 16L22.5 20H25.5V16H27V20H28.5C29.0523 20 29.5 20.4477 29.5 21V25L26.5 29V31C26.5 31.5523 26.0523 32 25.5 32H22.5C21.9477 32 21.5 31.5523 21.5 31V29L18.5 25V21C18.5 20.4477 18.9477 20 19.5 20H21L21 16H22.5ZM23 28.5V30.5H25V28.5L28 24.5V21.5H20V24.5L23 28.5Z" fill="#1e1e1e"/>
 					</svg>
@@ -221,7 +221,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns">
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="4" fill="#ededed"/>
 						<path d="M28.4287 20.6507C28.8387 20.8874 28.9791 21.4116 28.7424 21.8215L24.7424 28.7498C24.5057 29.1597 23.9815 29.3002 23.5715 29.0635C23.1616 28.8268 23.0211 28.3026 23.2578 27.8926L27.2578 20.9644C27.4945 20.5544 28.0187 20.414 28.4287 20.6507Z" fill="#1e1e1e"/>
 						<path d="M18.6433 23.579C18.2333 23.3423 17.7091 23.4828 17.4724 23.8927C17.2357 24.3027 17.3761 24.8269 17.7861 25.0636L18.281 25.3493C18.691 25.586 19.2152 25.4456 19.4519 25.0356C19.6886 24.6256 19.5481 24.1014 19.1381 23.8647L18.6433 23.579Z" fill="#1e1e1e"/>
@@ -235,7 +235,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="4" fill="#ededed"/>
 						<path d="M24 18.285C23.55 18.285 23.1637 18.1237 22.8412 17.8012C22.5187 17.4788 22.3575 17.0925 22.3575 16.6425C22.3575 16.1925 22.5187 15.8062 22.8412 15.4837C23.1637 15.1612 23.55 15 24 15C24.45 15 24.8362 15.1612 25.1587 15.4837C25.4812 15.8062 25.6425 16.1925 25.6425 16.6425C25.6425 17.0925 25.4812 17.4788 25.1587 17.8012C24.8362 18.1237 24.45 18.285 24 18.285ZM21.5925 33V21.0075C20.5725 20.9325 19.5862 20.8275 18.6337 20.6925C17.6812 20.5575 16.77 20.385 15.9 20.175L16.2375 18.825C17.5125 19.125 18.78 19.3387 20.04 19.4662C21.3 19.5938 22.62 19.6575 24 19.6575C25.38 19.6575 26.7 19.5938 27.96 19.4662C29.22 19.3387 30.4875 19.125 31.7625 18.825L32.1 20.175C31.23 20.385 30.3187 20.5575 29.3662 20.6925C28.4137 20.8275 27.4275 20.9325 26.4075 21.0075V33H25.0575V27.15H22.9425V33H21.5925Z" fill="#1e1e1e"/>
 					</svg>
@@ -277,7 +277,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 		<div class="about__section has-2-columns">
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="4" fill="#ededed"/>
 						<path d="M23 34v-4h-5l-2.293-2.293a1 1 0 0 1 0-1.414L18 24h5v-2h-7v-6h7v-2h2v2h5l2.293 2.293a1 1 0 0 1 0 1.414L30 22h-5v2h7v6h-7v4h-2Zm-5-14h11.175l.646-.646a.5.5 0 0 0 0-.708L29.175 18H18v2Zm.825 8H30v-2H18.825l-.646.646a.5.5 0 0 0 0 .708l.646.646Z" fill="#1e1e1e"/>
 					</svg>
@@ -295,7 +295,7 @@ require_once ABSPATH . 'wp-admin/admin-header.php';
 			</div>
 			<div class="column">
 				<div class="about__image">
-					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+					<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="https://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
 						<rect width="48" height="48" rx="4" fill="#ededed"/>
 						<path d="M28 19.75h-8v1.5h8v-1.5ZM20 23h8v1.5h-8V23ZM26 26.25h-6v1.5h6v-1.5Z" fill="#151515"/>
 						<path fill-rule="evenodd" clip-rule="evenodd" d="M29 16H19a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V18a2 2 0 0 0-2-2Zm-10 1.5h10a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5H19a.5.5 0 0 1-.5-.5V18a.5.5 0 0 1 .5-.5Z" fill="#1e1e1e"/>

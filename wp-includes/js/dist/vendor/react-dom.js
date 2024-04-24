@@ -584,7 +584,7 @@
   ].forEach(function (attributeName) {
     var name = attributeName.replace(CAMELIZE, capitalize);
     properties[name] = new PropertyInfoRecord(name, STRING, false, // mustUseProperty
-    attributeName, 'http://www.w3.org/1999/xlink', false, // sanitizeURL
+    attributeName, 'https://www.w3.org/1999/xlink', false, // sanitizeURL
     false);
   }); // String SVG attributes with the xml namespace.
 
@@ -594,7 +594,7 @@
   ].forEach(function (attributeName) {
     var name = attributeName.replace(CAMELIZE, capitalize);
     properties[name] = new PropertyInfoRecord(name, STRING, false, // mustUseProperty
-    attributeName, 'http://www.w3.org/XML/1998/namespace', false, // sanitizeURL
+    attributeName, 'https://www.w3.org/XML/1998/namespace', false, // sanitizeURL
     false);
   }); // These attribute exists both in HTML and SVG.
   // The attribute name is case-sensitive in SVG so we can't just use
@@ -611,7 +611,7 @@
 
   var xlinkHref = 'xlinkHref';
   properties[xlinkHref] = new PropertyInfoRecord('xlinkHref', STRING, false, // mustUseProperty
-  'xlink:href', 'http://www.w3.org/1999/xlink', true, // sanitizeURL
+  'xlink:href', 'https://www.w3.org/1999/xlink', true, // sanitizeURL
   false);
   ['src', 'href', 'action', 'formAction'].forEach(function (attributeName) {
     properties[attributeName] = new PropertyInfoRecord(attributeName, STRING, false, // mustUseProperty
@@ -1742,7 +1742,7 @@
    * The rendered element will be initialized as unchecked (or `defaultChecked`)
    * with an empty value (or `defaultValue`).
    *
-   * See http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
+   * See https://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html
    */
 
 
@@ -2354,9 +2354,9 @@
     updateWrapper$1(element, props);
   }
 
-  var HTML_NAMESPACE = 'http://www.w3.org/1999/xhtml';
-  var MATH_NAMESPACE = 'http://www.w3.org/1998/Math/MathML';
-  var SVG_NAMESPACE = 'http://www.w3.org/2000/svg'; // Assumes there is no parent namespace.
+  var HTML_NAMESPACE = 'https://www.w3.org/1999/xhtml';
+  var MATH_NAMESPACE = 'https://www.w3.org/1998/Math/MathML';
+  var SVG_NAMESPACE = 'https://www.w3.org/2000/svg'; // Assumes there is no parent namespace.
 
   function getIntrinsicNamespace(type) {
     switch (type) {
@@ -2611,7 +2611,7 @@
     // the markup. If you provide unsafe user data here they can inject
     // arbitrary CSS which may be problematic (I couldn't repro this):
     // https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet
-    // http://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
+    // https://www.thespanner.co.uk/2007/11/26/ultimate-xss-css-injection/
     // This is not an XSS hole but instead a potential CSS injection issue
     // which has lead to a greater discussion about how we're going to
     // trust URLs moving forward. See #2115901
@@ -2644,7 +2644,7 @@
    *   > hyphenateStyleName('msTransition')
    *   < "-ms-transition"
    *
-   * As Modernizr suggests (http://modernizr.com/docs/#prefixed), an `ms` prefix
+   * As Modernizr suggests (https://modernizr.com/docs/#prefixed), an `ms` prefix
    * is converted to `-ms-`.
    */
 
@@ -2680,7 +2680,7 @@
       warnedStyleNames[name] = true;
 
       error('Unsupported style property %s. Did you mean %s?', name, // As Andi Smith suggests
-      // (http://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
+      // (https://www.andismith.com/blog/2012/02/modernizr-prefixed/), an `-ms` prefix
       // is converted to lowercase `ms`.
       camelize(name.replace(msPattern$1, 'ms-')));
     };
@@ -3865,7 +3865,7 @@
     if (target.correspondingUseElement) {
       target = target.correspondingUseElement;
     } // Safari may fire events on text nodes (Node.TEXT_NODE is 3).
-    // @see http://www.quirksmode.org/js/events_properties.html
+    // @see https://www.quirksmode.org/js/events_properties.html
 
 
     return target.nodeType === TEXT_NODE ? target.parentNode : target;
@@ -6932,7 +6932,7 @@
   }
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
 
@@ -6973,7 +6973,7 @@
   }
   /**
    * @interface MouseEvent
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
 
@@ -7018,7 +7018,7 @@
   var SyntheticMouseEvent = createSyntheticEvent(MouseEventInterface);
   /**
    * @interface DragEvent
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
   var DragEventInterface = assign({}, MouseEventInterface, {
@@ -7028,7 +7028,7 @@
   var SyntheticDragEvent = createSyntheticEvent(DragEventInterface);
   /**
    * @interface FocusEvent
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
   var FocusEventInterface = assign({}, UIEventInterface, {
@@ -7038,7 +7038,7 @@
   var SyntheticFocusEvent = createSyntheticEvent(FocusEventInterface);
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/css3-animations/#AnimationEvent-interface
+   * @see https://www.w3.org/TR/css3-animations/#AnimationEvent-interface
    * @see https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent
    */
 
@@ -7051,7 +7051,7 @@
   var SyntheticAnimationEvent = createSyntheticEvent(AnimationEventInterface);
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/clipboard-apis/
+   * @see https://www.w3.org/TR/clipboard-apis/
    */
 
   var ClipboardEventInterface = assign({}, EventInterface, {
@@ -7063,7 +7063,7 @@
   var SyntheticClipboardEvent = createSyntheticEvent(ClipboardEventInterface);
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/#events-compositionevents
    */
 
   var CompositionEventInterface = assign({}, EventInterface, {
@@ -7073,7 +7073,7 @@
   var SyntheticCompositionEvent = createSyntheticEvent(CompositionEventInterface);
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
+   * @see https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105
    *      /#events-inputevents
    */
   // Happens to share the same list for now.
@@ -7178,7 +7178,7 @@
   }
   /**
    * Translation from modifier key to the associated property in the event.
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/#keys-Modifiers
    */
 
 
@@ -7208,7 +7208,7 @@
   }
   /**
    * @interface KeyboardEvent
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
 
@@ -7266,7 +7266,7 @@
   var SyntheticKeyboardEvent = createSyntheticEvent(KeyboardEventInterface);
   /**
    * @interface PointerEvent
-   * @see http://www.w3.org/TR/pointerevents/
+   * @see https://www.w3.org/TR/pointerevents/
    */
 
   var PointerEventInterface = assign({}, MouseEventInterface, {
@@ -7285,7 +7285,7 @@
   var SyntheticPointerEvent = createSyntheticEvent(PointerEventInterface);
   /**
    * @interface TouchEvent
-   * @see http://www.w3.org/TR/touch-events/
+   * @see https://www.w3.org/TR/touch-events/
    */
 
   var TouchEventInterface = assign({}, UIEventInterface, {
@@ -7302,7 +7302,7 @@
   var SyntheticTouchEvent = createSyntheticEvent(TouchEventInterface);
   /**
    * @interface Event
-   * @see http://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
+   * @see https://www.w3.org/TR/2009/WD-css3-transitions-20090320/#transition-events-
    * @see https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent
    */
 
@@ -7315,7 +7315,7 @@
   var SyntheticTransitionEvent = createSyntheticEvent(TransitionEventInterface);
   /**
    * @interface WheelEvent
-   * @see http://www.w3.org/TR/DOM-Level-3-Events/
+   * @see https://www.w3.org/TR/DOM-Level-3-Events/
    */
 
   var WheelEventInterface = assign({}, MouseEventInterface, {
@@ -7675,7 +7675,7 @@
   }
   /**
    * Create an `onBeforeInput` event to match
-   * http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
+   * https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/#events-inputevents.
    *
    * This event plugin is based on the native `textInput` event
    * available in Chrome, Safari, Opera, and IE. This event fires after
@@ -7699,7 +7699,7 @@
   }
 
   /**
-   * @see http://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
+   * @see https://www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
    */
   var supportedInputTypes = {
     color: true,

@@ -7,7 +7,7 @@ Requires PHP: 7.4
 Tested up to: 6.5
 Stable tag: 1.20.2
 License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.html
+License URI: https://www.gnu.org/licenses/gpl.html
 
 Advanced tag management for WordPress with Google Tag Manager
 
@@ -71,7 +71,7 @@ add the code lower in the code (it is not the recommended way but will work)
 * OS data (name, version)
 * device data (type, manufacturer, model)
 
-Data is provided using the WhichBrowser library: http://whichbrowser.net/
+Data is provided using the WhichBrowser library: https://whichbrowser.net/
 
 = Weather data =
 
@@ -87,7 +87,7 @@ audience/remarketing lists on ad platforms and allows for user segmentation in y
 * wind speed and degrees
 
 Weather data is queried from Open Weather Map. Depending on your websites traffic, additional fees may apply:
-http://openweathermap.org/price
+https://openweathermap.org/price
 
 An (free) API key from OpenWeatherMap is required for this feature to work.
 
@@ -127,7 +127,7 @@ Scroll tracking is based on the solution originally created by
 * Justin Cutroni
 
 Original script:
-http://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/
+https://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/
 
 = Blacklist & Whitelist Tag Manager tags, triggers and variables =
 

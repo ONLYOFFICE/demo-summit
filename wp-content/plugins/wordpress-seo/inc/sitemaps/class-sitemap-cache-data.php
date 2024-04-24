@@ -159,7 +159,7 @@ class WPSEO_Sitemap_Cache_Data implements Serializable, WPSEO_Sitemap_Cache_Data
 	 * implement the `Serializable` interface.
 	 * This change, however, can't be made until the minimum PHP version goes up to PHP 7.4 or higher.}
 	 *
-	 * @link http://php.net/manual/en/serializable.serialize.php
+	 * @link https://php.net/manual/en/serializable.serialize.php
 	 * @link https://wiki.php.net/rfc/phase_out_serializable
 	 *
 	 * @since 5.1.0
@@ -183,7 +183,7 @@ class WPSEO_Sitemap_Cache_Data implements Serializable, WPSEO_Sitemap_Cache_Data
 	 * implement the `Serializable` interface.
 	 * This change, however, can't be made until the minimum PHP version goes up to PHP 7.4 or higher.}
 	 *
-	 * @link http://php.net/manual/en/serializable.unserialize.php
+	 * @link https://php.net/manual/en/serializable.unserialize.php
 	 * @link https://wiki.php.net/rfc/phase_out_serializable
 	 *
 	 * @since 5.1.0

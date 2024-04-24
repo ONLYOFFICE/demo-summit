@@ -37,8 +37,8 @@
  * @author Ryan Parman
  * @author Sam Sneddon
  * @author Ryan McCue
- * @link http://simplepie.org/ SimplePie
- * @license http://www.opensource.org/licenses/bsd-license.php BSD License
+ * @link https://simplepie.org/ SimplePie
+ * @license https://www.opensource.org/licenses/bsd-license.php BSD License
  */
 
 /**
@@ -306,7 +306,7 @@ class SimplePie_Sanitize
 	 */
 	public function https_url($url)
 	{
-		return (strtolower(substr($url, 0, 7)) === 'http://') &&
+		return (strtolower(substr($url, 0, 7)) === 'https://') &&
 			$this->is_https_domain(parse_url($url, PHP_URL_HOST)) ?
 			substr_replace($url, 's', 4, 0) :	//Add the 's' to HTTPS
 			$url;
@@ -365,7 +365,7 @@ class SimplePie_Sanitize
 
 				// Strip out HTML tags and attributes that might cause various security problems.
 				// Based on recommendations by Mark Pilgrim at:
-				// http://diveintomark.org/archives/2003/06/12/how_to_consume_rss_safely
+				// https://diveintomark.org/archives/2003/06/12/how_to_consume_rss_safely
 				if ($this->strip_htmltags)
 				{
 					foreach ($this->strip_htmltags as $tag)
@@ -485,7 +485,7 @@ class SimplePie_Sanitize
 		}
 		else
 		{
-			$ret .= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
+			$ret .= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
 			$content_type = 'application/xhtml+xml';
 		}
 

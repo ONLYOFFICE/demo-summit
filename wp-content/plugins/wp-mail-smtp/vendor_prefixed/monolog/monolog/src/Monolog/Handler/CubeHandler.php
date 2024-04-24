@@ -15,7 +15,7 @@ use WPMailSMTP\Vendor\Monolog\Utils;
 /**
  * Logs to Cube.
  *
- * @link http://square.github.com/cube/
+ * @link https://square.github.com/cube/
  * @author Wan Chen <kami@kamisama.me>
  */
 class CubeHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessingHandler
@@ -75,7 +75,7 @@ class CubeHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessingH
         if (!\extension_loaded('curl')) {
             throw new \LogicException('The curl extension is needed to use http URLs with the CubeHandler');
         }
-        $this->httpConnection = \curl_init('http://' . $this->host . ':' . $this->port . '/1.0/event/put');
+        $this->httpConnection = \curl_init('https://' . $this->host . ':' . $this->port . '/1.0/event/put');
         if (!$this->httpConnection) {
             throw new \LogicException('Unable to connect to ' . $this->host . ':' . $this->port);
         }

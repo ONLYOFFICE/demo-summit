@@ -1,5 +1,5 @@
 /*
- * Source: http://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/
+ * Source: https://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/
  * Original authors:
  *  - Nick Mihailovski
  *  - Thomas Baekdal

@@ -615,7 +615,7 @@ msgstr ""
 "\n"
 "С наилучшими пожеланиеми,\n"
 "Плагин WP Super Cache\n"
-"http://wordpress.org/plugins/wp-super-cache/"
+"https://wordpress.org/plugins/wp-super-cache/"
 
 #: wp-cache.php:3766
 msgid "Supercache Uninstall Problems"
@@ -1730,8 +1730,8 @@ msgid "Mod rewrite may not be installed!"
 msgstr "Кажется, модуль mod_rewrite не установлен!"
 
 #: wp-cache.php:534
-msgid "PHP is compressing the data sent to the visitors of your site. Disabling this is recommended as the plugin caches the compressed output once instead of compressing the same page over and over again. Also see #21 in the Troubleshooting section. See <a href=\"http://php.net/manual/en/zlib.configuration.php\">this page</a> for instructions on modifying your php.ini."
-msgstr "PHP использует сжатие для сжатых страницы Вашего сайта. Отключение данной опции рекомендуется, чтобы избежать многократного сжатия страниц плагином. Узнать больше, посетив раздел 16 в \"Описание проблем\" в файле readme.txt (на англ.). Также ознакомьтесь с <a href=\"http://php.net/manual/en/zlib.configuration.php\">этой страницей</a> (на англ.) по php.ini."
+msgid "PHP is compressing the data sent to the visitors of your site. Disabling this is recommended as the plugin caches the compressed output once instead of compressing the same page over and over again. Also see #21 in the Troubleshooting section. See <a href=\"https://php.net/manual/en/zlib.configuration.php\">this page</a> for instructions on modifying your php.ini."
+msgstr "PHP использует сжатие для сжатых страницы Вашего сайта. Отключение данной опции рекомендуется, чтобы избежать многократного сжатия страниц плагином. Узнать больше, посетив раздел 16 в \"Описание проблем\" в файле readme.txt (на англ.). Также ознакомьтесь с <a href=\"https://php.net/manual/en/zlib.configuration.php\">этой страницей</a> (на англ.) по php.ini."
 
 #: wp-cache.php:533
 msgid "Zlib Output Compression Enabled!"
@@ -1766,11 +1766,11 @@ msgid "Permlink Structure Error"
 msgstr "Ошибка структуры ссылок"
 
 #: wp-cache.php:461
-msgid "You or an administrator must disable this. See the <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
-msgstr "Вы или Администратор должны отключить это. Для более подробной информации смотрите <a href=\"http://php.net/features.safe-mode\">страницу помощи по режиму safe mode</a> (на англ.). Данные настройки НЕ могут быть отключены через файл .htaccess, для решения проблемы нужно редактировать php.ini в настройках веб-сервера."
+msgid "You or an administrator must disable this. See the <a href=\"https://php.net/features.safe-mode\">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file."
+msgstr "Вы или Администратор должны отключить это. Для более подробной информации смотрите <a href=\"https://php.net/features.safe-mode\">страницу помощи по режиму safe mode</a> (на англ.). Данные настройки НЕ могут быть отключены через файл .htaccess, для решения проблемы нужно редактировать php.ini в настройках веб-сервера."
 
 #: wp-cache.php:459
-msgid "You or an administrator may be able to make it work by changing the group owner of the plugin scripts to match that of the web server user. The group owner of the %s/cache/ directory must also be changed. See the  <a href=\"http://php.net/features.safe-mode\">safe mode manual page</a> for further details."
+msgid "You or an administrator may be able to make it work by changing the group owner of the plugin scripts to match that of the web server user. The group owner of the %s/cache/ directory must also be changed. See the  <a href=\"https://php.net/features.safe-mode\">safe mode manual page</a> for further details."
 msgstr "Вы или Администратор можете исправить ошибки, изменив группу владельца скриптов плагина через настройки веб-сервера. Также нужно изменить владельца для папки %s/cache/. Для более подробной информации смотрите <a href=\"https://www.php.net/manual/ru/features.safe-mode.php\">страницу помощи по режиму safe mode</a>."
 
 #: wp-cache.php:457
@@ -1876,8 +1876,8 @@ msgid "Bad Behavior support is now %s"
 msgstr "Статус плагина \"Bad Behaviour\": %s. "
 
 #: plugins/badbehaviour.php:72
-msgid "(Only WPCache caching supported, disabled compression and requires <a href=\"http://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in \"%s/plugins/bad-behavior/\") "
-msgstr "(Поддерживается только кеширование WPCache, отключенное сжатие и требует<a href=\"http://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in \"%s/plugins/bad-behavior/\") "
+msgid "(Only WPCache caching supported, disabled compression and requires <a href=\"https://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in \"%s/plugins/bad-behavior/\") "
+msgstr "(Поддерживается только кеширование WPCache, отключенное сжатие и требует<a href=\"https://www.bad-behavior.ioerror.us/\">Bad Behavior</a> in \"%s/plugins/bad-behavior/\") "
 
 #: plugins/badbehaviour.php:67 plugins/badbehaviour.php:97
 msgid "Bad Behavior"
@@ -1932,8 +1932,8 @@ msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает подтверждения."
 
 #: ossdl-cdn.php:377
-msgid "CDN functionality provided by <a href=\"https://wordpress.org/plugins/ossdl-cdn-off-linker/\">OSSDL CDN Off Linker</a> by <a href=\"http://mark.ossdl.de/\">Mark Kubacki</a>"
-msgstr "Функциональность CDN предоставлена <a href=\"https://wordpress.org/plugins/ossdl-cdn-off-linker/\">OSSDL CDN Off Linker</a> от <a href=\"http://mark.ossdl.de/\">Mark Kubacki</a>"
+msgid "CDN functionality provided by <a href=\"https://wordpress.org/plugins/ossdl-cdn-off-linker/\">OSSDL CDN Off Linker</a> by <a href=\"https://mark.ossdl.de/\">Mark Kubacki</a>"
+msgstr "Функциональность CDN предоставлена <a href=\"https://wordpress.org/plugins/ossdl-cdn-off-linker/\">OSSDL CDN Off Linker</a> от <a href=\"https://mark.ossdl.de/\">Mark Kubacki</a>"
 
 #: ossdl-cdn.php:375
 msgid "Save Changes"
@@ -1945,7 +1945,7 @@ msgstr "Пропустить адреса типа https чтобы избежа
 
 #: ossdl-cdn.php:367
 msgid "These <a href=\"https://www.wikipedia.org/wiki/CNAME_record\">CNAMES</a> will be used in place of %1$s for rewriting (in addition to the off-site URL above). Use a comma as the delimiter. For pages with a large number of static files, this can improve browser performance. CNAMEs may also need to be configured on your CDN.<br />Example: %2$s"
-msgstr "Эти записи <a href=\"http://en.wikipedia.org/wiki/CNAME_record\">CNAME</a> будут использованы вместо %1$s (в дополнении к основному URL). Используйте запятую (,) для разделения записей. Для страниц с большим количеством статичных файлов данная опция может уменьшить время загрузки. Записи CNAME также могут быть использованы для конфигурации CDN.<br />Пример: %2$s"
+msgstr "Эти записи <a href=\"https://en.wikipedia.org/wiki/CNAME_record\">CNAME</a> будут использованы вместо %1$s (в дополнении к основному URL). Используйте запятую (,) для разделения записей. Для страниц с большим количеством статичных файлов данная опция может уменьшить время загрузки. Записи CNAME также могут быть использованы для конфигурации CDN.<br />Пример: %2$s"
 
 #: ossdl-cdn.php:364
 msgid "Additional CNAMES"

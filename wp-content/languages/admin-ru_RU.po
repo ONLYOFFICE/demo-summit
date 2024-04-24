@@ -918,7 +918,7 @@ msgstr "Можно выбрать язык, и файлы перевода бу�
 msgid "If you want site visitors to be able to register themselves, check the membership box. If you want the site administrator to register every new user, leave the box unchecked. In either case, you can set a default user role for all new users."
 msgstr "Если вы хотите, чтобы посетители сайта могли регистрироваться сами, установите флажок. Если вы хотите, чтобы администратор сайта регистрировал каждого нового пользователя, оставьте флажок снятым. В любом случае, вы можете установить роль пользователя по умолчанию для всех новых пользователей."
 
-#. translators: 1: http://, 2: https:
+#. translators: 1: https://, 2: https:
 #: wp-admin/options-general.php:39
 msgid "Both WordPress URL and site URL can start with either %1$s or %2$s. A URL starting with %2$s requires an SSL certificate, so be sure that you have one before changing to %2$s. With %2$s, a padlock will appear next to the address in the browser address bar. Both %2$s and the padlock signal that your site meets some basic security requirements, which can build trust with your visitors and with search engines."
 msgstr "И URL-адрес WordPress, и URL-адрес сайта могут начинаться с %1$s или %2$s. Для URL-адреса, начинающегося с %2$s, требуется сертификат SSL, поэтому убедитесь, что он у вас есть, прежде чем переходить на %2$s. При использовании %2$s рядом с адресом в адресной строке браузера появится значок замка. И %2$s, и значок замка сигнализируют о том, что ваш сайт соответствует некоторым базовым требованиям безопасности, что может завоевать доверие посетителей и поисковых систем."
@@ -10104,8 +10104,8 @@ msgstr "Плагины расширяют и дополняют функцион
 
 #. Plugin URI of the plugin
 #: hello.php
-msgid "http://wordpress.org/plugins/hello-dolly/"
-msgstr "http://wordpress.org/plugins/hello-dolly/"
+msgid "https://wordpress.org/plugins/hello-dolly/"
+msgstr "https://wordpress.org/plugins/hello-dolly/"
 
 #: wp-admin/includes/class-theme-upgrader.php:80
 msgid "The theme contains no files."
@@ -10985,8 +10985,8 @@ msgstr "Добавить комментарий"
 
 #. Author URI of the plugin
 #: hello.php
-msgid "http://ma.tt/"
-msgstr "http://ma.tt/"
+msgid "https://ma.tt/"
+msgstr "https://ma.tt/"
 
 #. Description of the plugin
 #: hello.php
@@ -12571,7 +12571,7 @@ msgstr "Обрезать и опубликовать"
 
 #: wp-admin/edit-link-form.php:70
 msgid "XFN stands for <a href=\"https://gmpg.org/xfn/\">XHTML Friends Network</a>, which is optional. WordPress allows the generation of XFN attributes to show how you are related to the authors/owners of the site to which you are linking."
-msgstr "XFN расшифровывается как <a href=\"http://gmpg.org/xfn/\">XHTML Friends Network</a> (микроформат для пометки социальных взаимоотношений) и является необязательным блоком. WordPress позволяет использовать атрибуты XFN, чтобы указать ваше отношение к авторам/владельцам сайта, на который вы ссылаетесь."
+msgstr "XFN расшифровывается как <a href=\"https://gmpg.org/xfn/\">XHTML Friends Network</a> (микроформат для пометки социальных взаимоотношений) и является необязательным блоком. WordPress позволяет использовать атрибуты XFN, чтобы указать ваше отношение к авторам/владельцам сайта, на который вы ссылаетесь."
 
 #: wp-admin/includes/file.php:2576
 msgid "FTP Password"
@@ -14983,7 +14983,7 @@ msgstr "Адрес картинки"
 
 #: wp-admin/includes/meta-boxes.php:1466
 msgid "If the link is to a person, you can specify your relationship with them using the above form. If you would like to learn more about the idea check out <a href=\"https://gmpg.org/xfn/\">XFN</a>."
-msgstr "Если ссылка ведёт на человека, с помощью этой формы вы можете указать ваши отношения. За дополнительной информацией обращайтесь к <a href=\"http://gmpg.org/xfn/\">XFN</a>."
+msgstr "Если ссылка ведёт на человека, с помощью этой формы вы можете указать ваши отношения. За дополнительной информацией обращайтесь к <a href=\"https://gmpg.org/xfn/\">XFN</a>."
 
 #. translators: xfn: https://gmpg.org/xfn
 #: wp-admin/includes/meta-boxes.php:1460

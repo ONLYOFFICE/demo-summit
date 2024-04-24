@@ -130,7 +130,7 @@ class WP_REST_Block_Pattern_Categories_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'http://json-schema.org/draft-04/schema#',
+			'$schema'    => 'https://json-schema.org/draft-04/schema#',
 			'title'      => 'block-pattern-category',
 			'type'       => 'object',
 			'properties' => array(

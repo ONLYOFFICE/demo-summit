@@ -218,7 +218,7 @@ class WP_REST_Font_Collections_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'http://json-schema.org/draft-04/schema#',
+			'$schema'    => 'https://json-schema.org/draft-04/schema#',
 			'title'      => 'font-collection',
 			'type'       => 'object',
 			'properties' => array(

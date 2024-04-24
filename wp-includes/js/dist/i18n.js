@@ -865,7 +865,7 @@ function pluralForms( expression ) {
 /**
  * Jed-formatted locale data.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  *
  * @typedef {{[domain:string]:TanninLocaleDomain}} TanninLocaleData
  */
@@ -1076,7 +1076,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * Returns locale data by domain in a
  * Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  */
 /**
  * @typedef {(data?: LocaleData, domain?: string) => void} SetLocaleData
@@ -1085,7 +1085,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * function will overwrite the domain configuration. Accepts data in a
  * Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  */
 /**
  * @typedef {(data?: LocaleData, domain?: string) => void} AddLocaleData
@@ -1094,7 +1094,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * function will also merge the domain configuration. Accepts data in a
  * Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  */
 /**
  * @typedef {(data?: LocaleData, domain?: string) => void} ResetLocaleData
@@ -1102,7 +1102,7 @@ const I18N_HOOK_REGEXP = /^i18n\.(n?gettext|has_translation)(_|$)/;
  * Resets all current Tannin instance locale data and sets the specified
  * locale data for the domain. Accepts data in a Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  */
 /** @typedef {() => void} SubscribeCallback */
 /** @typedef {() => void} UnsubscribeCallback */
@@ -1481,7 +1481,7 @@ const i18n = createI18n(undefined, undefined, external_wp_hooks_namespaceObject.
 /**
  * Returns locale data by domain in a Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  *
  * @param {string} [domain] Domain for which to get the data.
  * @return {LocaleData} Locale data.
@@ -1492,7 +1492,7 @@ const getLocaleData = i18n.getLocaleData.bind(i18n);
  * Merges locale data into the Tannin instance by domain. Accepts data in a
  * Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  *
  * @param {LocaleData} [data]   Locale data configuration.
  * @param {string}     [domain] Domain for which configuration applies.
@@ -1503,7 +1503,7 @@ const setLocaleData = i18n.setLocaleData.bind(i18n);
  * Resets all current Tannin instance locale data and sets the specified
  * locale data for the domain. Accepts data in a Jed-formatted JSON object shape.
  *
- * @see http://messageformat.github.io/Jed/
+ * @see https://messageformat.github.io/Jed/
  *
  * @param {LocaleData} [data]   Locale data configuration.
  * @param {string}     [domain] Domain for which configuration applies.

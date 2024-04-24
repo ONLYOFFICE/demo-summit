@@ -652,7 +652,7 @@ class User_Agent_Info {
 	/**
 	 * Detects if the current browser is Firefox Mobile (Fennec)
 	 *
-	 * See http://www.useragentstring.com/pages/Fennec/
+	 * See https://www.useragentstring.com/pages/Fennec/
 	 * Mozilla/5.0 (Windows NT 6.1; WOW64; rv:2.1.1) Gecko/20110415 Firefox/4.0.2pre Fennec/4.0.1
 	 * Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1b2pre) Gecko/20081015 Fennec/1.0a1
 	 */
@@ -1565,12 +1565,12 @@ class User_Agent_Info {
 			'cookieinformationscanner', // p1699315886066389-slack-C0438NHCLSY
 			'facebookexternalhit', // https://www.facebook.com/externalhit_uatext.php
 			'feedburner',
-			'yacybot', // http://yacy.net/bot.html
-			'trendictionbot',  // http://www.trendiction.de/bot;
+			'yacybot', // https://yacy.net/bot.html
+			'trendictionbot',  // https://www.trendiction.de/bot;
 			'elisabot',
-			'linkfluence', // http://linkfluence.com/
+			'linkfluence', // https://linkfluence.com/
 			'semrushbot', // https://www.semrush.com/bot/
-			'archive.org_bot', // http://archive.org/details/archive.org_bot
+			'archive.org_bot', // https://archive.org/details/archive.org_bot
 			'ezlynxbot', // https://www.ezoic.com/bot
 			'siteauditbot', // https://www.semrush.com/bot/
 			'snapchat', // https://developers.snap.com/robots

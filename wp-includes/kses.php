@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License along
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
- * http://www.gnu.org/licenses/gpl.html
+ * https://www.gnu.org/licenses/gpl.html
  *
  * [kses strips evil scripts!]
  *
@@ -24,7 +24,7 @@
  *
  * @version 0.2.2
  * @copyright (C) 2002, 2003, 2005
- * @author Ulf Harnhammar <http://advogato.org/person/metaur/>
+ * @author Ulf Harnhammar <https://advogato.org/person/metaur/>
  *
  * @package External
  * @subpackage KSES
@@ -1704,10 +1704,10 @@ function wp_kses_check_attr_val( $value, $vless, $checkname, $checkvalue ) {
 function wp_kses_bad_protocol( $content, $allowed_protocols ) {
 	$content = wp_kses_no_null( $content );
 
-	// Short-circuit if the string starts with `https://` or `http://`. Most common cases.
+	// Short-circuit if the string starts with `https://` or `https://`. Most common cases.
 	if (
 		( str_starts_with( $content, 'https://' ) && in_array( 'https', $allowed_protocols, true ) ) ||
-		( str_starts_with( $content, 'http://' ) && in_array( 'http', $allowed_protocols, true ) )
+		( str_starts_with( $content, 'https://' ) && in_array( 'http', $allowed_protocols, true ) )
 	) {
 		return $content;
 	}
@@ -2705,7 +2705,7 @@ function _wp_kses_allow_pdf_objects( $url ) {
 	$upload_host = isset( $parsed_url['host'] ) ? $parsed_url['host'] : '';
 	$upload_port = isset( $parsed_url['port'] ) ? ':' . $parsed_url['port'] : '';
 
-	if ( str_starts_with( $url, "http://$upload_host$upload_port/" )
+	if ( str_starts_with( $url, "https://$upload_host$upload_port/" )
 		|| str_starts_with( $url, "https://$upload_host$upload_port/" )
 	) {
 		return true;

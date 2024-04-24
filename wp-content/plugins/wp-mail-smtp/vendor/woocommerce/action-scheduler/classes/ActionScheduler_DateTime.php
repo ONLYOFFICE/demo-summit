@@ -44,7 +44,7 @@ class ActionScheduler_DateTime extends DateTime {
 	 * Returns the timezone offset.
 	 *
 	 * @return int
-	 * @link http://php.net/manual/en/datetime.getoffset.php
+	 * @link https://php.net/manual/en/datetime.getoffset.php
 	 */
 	#[\ReturnTypeWillChange]
 	public function getOffset() {
@@ -57,7 +57,7 @@ class ActionScheduler_DateTime extends DateTime {
 	 * @param DateTimeZone $timezone
 	 *
 	 * @return static
-	 * @link http://php.net/manual/en/datetime.settimezone.php
+	 * @link https://php.net/manual/en/datetime.settimezone.php
 	 */
 	#[\ReturnTypeWillChange]
 	public function setTimezone( $timezone ) {

@@ -241,4 +241,4 @@ BuildIds::$ANDROID_BUILDS = [
     'NRD28C'        => ['value' => '7.0', 'alias' => 'N'],
 ];
 
-// Source: http://source.android.com/source/build-numbers.html
+// Source: https://source.android.com/source/build-numbers.html

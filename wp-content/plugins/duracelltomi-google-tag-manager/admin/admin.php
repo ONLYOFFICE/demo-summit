@@ -170,7 +170,7 @@ function gtm4wp_admin_output_section( $args ) {
 					'* Browser, OS and Device data is provided using %1$sWhichBrowser%2$s library.',
 					'duracelltomi-google-tag-manager'
 				),
-				'<a href="http://whichbrowser.net/" target="_blank" rel="noopener">',
+				'<a href="https://whichbrowser.net/" target="_blank" rel="noopener">',
 				'</a>'
 			);
 
@@ -190,7 +190,7 @@ function gtm4wp_admin_output_section( $args ) {
 					'Based on the script originaly posted to %1$sAnalytics Talk%2$s',
 					'duracelltomi-google-tag-manager'
 				),
-				'<a href="http://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/" target="_blank" rel="noopener">',
+				'<a href="https://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analytics-part-1/" target="_blank" rel="noopener">',
 				'</a>'
 			);
 

@@ -7,7 +7,7 @@
  * and may be followed by any number of letters, digits ([0-9]),
  * hyphens ("-"), underscores ("_"), colons (":"), and periods (".").
  *
- * @link http://www.w3.org/TR/html401/types.html#h-6.2
+ * @link https://www.w3.org/TR/html401/types.html#h-6.2
  *
  * @return bool True if it is a valid name, false if not.
  */

@@ -456,9 +456,9 @@ function wp_cache_manager_error_checks() {
 		if ( ! ini_get( 'safe_mode_gid' ) ) { // @codingStandardsIgnoreLine
 			esc_html_e( 'Your server is set up to check the owner of PHP scripts before allowing them to read and write files.', 'wp-super-cache' );
 			echo '<br />';
-			printf( __( 'You or an administrator may be able to make it work by changing the group owner of the plugin scripts to match that of the web server user. The group owner of the %s/cache/ directory must also be changed. See the  <a href="http://php.net/features.safe-mode">safe mode manual page</a> for further details.', 'wp-super-cache' ), esc_attr( WP_CONTENT_DIR ) );
+			printf( __( 'You or an administrator may be able to make it work by changing the group owner of the plugin scripts to match that of the web server user. The group owner of the %s/cache/ directory must also be changed. See the  <a href="https://php.net/features.safe-mode">safe mode manual page</a> for further details.', 'wp-super-cache' ), esc_attr( WP_CONTENT_DIR ) );
 		} else {
-			_e( 'You or an administrator must disable this. See the <a href="http://php.net/features.safe-mode">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file.', 'wp-super-cache' );
+			_e( 'You or an administrator must disable this. See the <a href="https://php.net/features.safe-mode">safe mode manual page</a> for further details. This cannot be disabled in a .htaccess file unfortunately. It must be done in the php.ini config file.', 'wp-super-cache' );
 		}
 		echo '</p></div>';
 	}
@@ -478,7 +478,7 @@ function wp_cache_manager_error_checks() {
 			</div>
 			<?php
 		} elseif ( function_exists( "wp_remote_get" ) == false ) {
-			$hostname = str_replace( 'http://', '', str_replace( 'https://', '', get_option( 'siteurl' ) ) );
+			$hostname = str_replace( 'https://', '', str_replace( 'https://', '', get_option( 'siteurl' ) ) );
 			if( strpos( $hostname, '/' ) )
 				$hostname = substr( $hostname, 0, strpos( $hostname, '/' ) );
 			$ip = gethostbyname( $hostname );
@@ -531,7 +531,7 @@ function wp_cache_manager_error_checks() {
 
 	if ( 1 == ini_get( 'zlib.output_compression' ) || "on" == strtolower( ini_get( 'zlib.output_compression' ) ) ) {
 		?><div class="notice notice-warning"><h4><?php _e( 'Zlib Output Compression Enabled!', 'wp-super-cache' ); ?></h4>
-		<p><?php _e( 'PHP is compressing the data sent to the visitors of your site. Disabling this is recommended as the plugin caches the compressed output once instead of compressing the same page over and over again. Also see #21 in the Troubleshooting section. See <a href="http://php.net/manual/en/zlib.configuration.php">this page</a> for instructions on modifying your php.ini.', 'wp-super-cache' ); ?></p></div><?php
+		<p><?php _e( 'PHP is compressing the data sent to the visitors of your site. Disabling this is recommended as the plugin caches the compressed output once instead of compressing the same page over and over again. Also see #21 in the Troubleshooting section. See <a href="https://php.net/manual/en/zlib.configuration.php">this page</a> for instructions on modifying your php.ini.', 'wp-super-cache' ); ?></p></div><?php
 	}
 
 	if (
@@ -972,7 +972,7 @@ function wp_cache_manager() {
 	if ( function_exists( "lite_detection_ua_prefixes" ) ) {
 		$wp_cache_mobile_prefixes = lite_detection_ua_prefixes();
 	} else {
-		$wp_cache_mobile_prefixes = array( 'w3c ', 'w3c-', 'acs-', 'alav', 'alca', 'amoi', 'audi', 'avan', 'benq', 'bird', 'blac', 'blaz', 'brew', 'cell', 'cldc', 'cmd-', 'dang', 'doco', 'eric', 'hipt', 'htc_', 'inno', 'ipaq', 'ipod', 'jigs', 'kddi', 'keji', 'leno', 'lg-c', 'lg-d', 'lg-g', 'lge-', 'lg/u', 'maui', 'maxo', 'midp', 'mits', 'mmef', 'mobi', 'mot-', 'moto', 'mwbp', 'nec-', 'newt', 'noki', 'palm', 'pana', 'pant', 'phil', 'play', 'port', 'prox', 'qwap', 'sage', 'sams', 'sany', 'sch-', 'sec-', 'send', 'seri', 'sgh-', 'shar', 'sie-', 'siem', 'smal', 'smar', 'sony', 'sph-', 'symb', 't-mo', 'teli', 'tim-', 'tosh', 'tsm-', 'upg1', 'upsi', 'vk-v', 'voda', 'wap-', 'wapa', 'wapi', 'wapp', 'wapr', 'webc', 'winw', 'winw', 'xda ', 'xda-' ); // from http://svn.wp-plugins.org/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php
+		$wp_cache_mobile_prefixes = array( 'w3c ', 'w3c-', 'acs-', 'alav', 'alca', 'amoi', 'audi', 'avan', 'benq', 'bird', 'blac', 'blaz', 'brew', 'cell', 'cldc', 'cmd-', 'dang', 'doco', 'eric', 'hipt', 'htc_', 'inno', 'ipaq', 'ipod', 'jigs', 'kddi', 'keji', 'leno', 'lg-c', 'lg-d', 'lg-g', 'lge-', 'lg/u', 'maui', 'maxo', 'midp', 'mits', 'mmef', 'mobi', 'mot-', 'moto', 'mwbp', 'nec-', 'newt', 'noki', 'palm', 'pana', 'pant', 'phil', 'play', 'port', 'prox', 'qwap', 'sage', 'sams', 'sany', 'sch-', 'sec-', 'send', 'seri', 'sgh-', 'shar', 'sie-', 'siem', 'smal', 'smar', 'sony', 'sph-', 'symb', 't-mo', 'teli', 'tim-', 'tosh', 'tsm-', 'upg1', 'upsi', 'vk-v', 'voda', 'wap-', 'wapa', 'wapi', 'wapp', 'wapr', 'webc', 'winw', 'winw', 'xda ', 'xda-' ); // from https://svn.wp-plugins.org/wordpress-mobile-pack/trunk/plugins/wpmp_switcher/lite_detection.php
 	}
 	$wp_cache_mobile_browsers = apply_filters( 'cached_mobile_browsers', $wp_cache_mobile_browsers ); // Allow mobile plugins access to modify the mobile UA list
 	$wp_cache_mobile_prefixes = apply_filters( 'cached_mobile_prefixes', $wp_cache_mobile_prefixes ); // Allow mobile plugins access to modify the mobile UA prefix list
@@ -997,7 +997,7 @@ function wp_cache_manager() {
 		$cache_rebuild_files = 0;
 
 	$valid_nonce = isset($_REQUEST['_wpnonce']) ? wp_verify_nonce($_REQUEST['_wpnonce'], 'wp-cache') : false;
-	/* http://www.netlobo.com/div_hiding.html */
+	/* https://www.netlobo.com/div_hiding.html */
 	?>
 <script type='text/javascript'>
 <!--
@@ -1562,7 +1562,7 @@ function wpsc_lockdown() {
 	);
 }
 
-function RecursiveFolderDelete ( $folderPath ) { // from http://www.php.net/manual/en/function.rmdir.php
+function RecursiveFolderDelete ( $folderPath ) { // from https://www.php.net/manual/en/function.rmdir.php
 	if( trailingslashit( constant( 'ABSPATH' ) ) == trailingslashit( $folderPath ) )
 		return false;
 	if ( @is_dir ( $folderPath ) ) {
@@ -2620,7 +2620,7 @@ function wp_cache_files() {
 								$age = $d[ 'lower_age' ];
 							}
 							$bg = $flip ? 'style="background: #EAEAEA;"' : '';
-							echo "<tr $bg><td>$c</td><td> <a href='http://{$directory}'>{$directory}</a></td><td>{$d[ 'files' ]}</td><td>{$age}</td><td><a href='" . wp_nonce_url( add_query_arg( array( 'page' => 'wpsupercache', 'action' => 'deletesupercache', 'uri' => base64_encode( $directory ) ) ), 'wp-cache' ) . "#listfiles'>X</a></td></tr>\n";
+							echo "<tr $bg><td>$c</td><td> <a href='https://{$directory}'>{$directory}</a></td><td>{$d[ 'files' ]}</td><td>{$age}</td><td><a href='" . wp_nonce_url( add_query_arg( array( 'page' => 'wpsupercache', 'action' => 'deletesupercache', 'uri' => base64_encode( $directory ) ) ), 'wp-cache' ) . "#listfiles'>X</a></td></tr>\n";
 							$flip = !$flip;
 							++$c;
 						}
@@ -3767,7 +3767,7 @@ function wp_cache_disable_plugin( $delete_config_file = true ) {
 	}
 }
 
-function uninstall_supercache( $folderPath ) { // from http://www.php.net/manual/en/function.rmdir.php
+function uninstall_supercache( $folderPath ) { // from https://www.php.net/manual/en/function.rmdir.php
 	if ( trailingslashit( constant( 'ABSPATH' ) ) == trailingslashit( $folderPath ) )
 		return false;
 	if ( @is_dir ( $folderPath ) ) {

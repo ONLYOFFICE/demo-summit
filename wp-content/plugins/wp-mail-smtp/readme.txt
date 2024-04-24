@@ -193,7 +193,7 @@ You can try the [free version of WPForms plugin](https://wordpress.org/plugins/w
 
 == Installation ==
 
-1. Install WP Mail SMTP by WPForms either via the WordPress.org plugin repository or by uploading the files to your server. (See instructions on [how to install a WordPress plugin](http://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/))
+1. Install WP Mail SMTP by WPForms either via the WordPress.org plugin repository or by uploading the files to your server. (See instructions on [how to install a WordPress plugin](https://www.wpbeginner.com/beginners-guide/step-by-step-guide-to-install-a-wordpress-plugin-for-beginners/))
 2. Activate WP Mail SMTP by WPForms.
 3. Navigate to the Settings area of WP Mail SMTP in the WordPress admin.
 4. Choose your SMTP option (SMTP.com, Brevo (formerly Sendinblue), Mailgun SMTP, SendGrid SMTP, Postmark, SparkPost, Gmail SMTP, or Other SMTP) and follow the instructions to set it up.
@@ -262,7 +262,7 @@ Read our [SparkPost documentation](https://wpmailsmtp.com/docs/how-to-set-up-the
 
 Often bloggers and small business owners don't want to use third-party SMTP services. Well you can use your Gmail or Google Workspace (also known as G Suite/Google Apps) account for SMTP emails.
 
-This allows you to use your [professional email address](http://www.wpbeginner.com/beginners-guide/how-to-setup-a-professional-email-address-with-gmail-and-google-apps/) and improve email deliverability.
+This allows you to use your [professional email address](https://www.wpbeginner.com/beginners-guide/how-to-setup-a-professional-email-address-with-gmail-and-google-apps/) and improve email deliverability.
 
 Unlike other Gmail SMTP plugins, our Gmail SMTP option uses OAuth to authenticate your Google account, keeping your login information 100% secure.
 

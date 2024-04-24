@@ -420,7 +420,7 @@ class WP_REST_Global_Styles_Revisions_Controller extends WP_REST_Controller {
 		}
 
 		$schema = array(
-			'$schema'    => 'http://json-schema.org/draft-04/schema#',
+			'$schema'    => 'https://json-schema.org/draft-04/schema#',
 			'title'      => "{$this->parent_post_type}-revision",
 			'type'       => 'object',
 			// Base properties for every revision.

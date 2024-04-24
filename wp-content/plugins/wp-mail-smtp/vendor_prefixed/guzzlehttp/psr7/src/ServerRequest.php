@@ -139,7 +139,7 @@ class ServerRequest extends \WPMailSMTP\Vendor\GuzzleHttp\Psr7\Request implement
     }
     private static function extractHostAndPortFromAuthority(string $authority) : array
     {
-        $uri = 'http://' . $authority;
+        $uri = 'https://' . $authority;
         $parts = \parse_url($uri);
         if (\false === $parts) {
             return [null, null];

@@ -34,7 +34,7 @@ class CouchDBHandler extends \WPMailSMTP\Vendor\Monolog\Handler\AbstractProcessi
         if ($this->options['username']) {
             $basicAuth = \sprintf('%s:%s@', $this->options['username'], $this->options['password']);
         }
-        $url = 'http://' . $basicAuth . $this->options['host'] . ':' . $this->options['port'] . '/' . $this->options['dbname'];
+        $url = 'https://' . $basicAuth . $this->options['host'] . ':' . $this->options['port'] . '/' . $this->options['dbname'];
         $context = \stream_context_create(array('http' => array('method' => 'POST', 'content' => $record['formatted'], 'ignore_errors' => \true, 'max_redirects' => 0, 'header' => 'Content-type: application/json')));
         if (\false === @\file_get_contents($url, null, $context)) {
             throw new \RuntimeException(\sprintf('Could not connect to %s', $url));

@@ -13,7 +13,7 @@ namespace WPMailSMTP\Vendor\Monolog\Formatter;
 /**
  * Serializes a log message to Logstash Event Format
  *
- * @see http://logstash.net/
+ * @see https://logstash.net/
  * @see https://github.com/logstash/logstash/blob/master/lib/logstash/event.rb
  *
  * @author Tim Mower <timothy.mower@gmail.com>

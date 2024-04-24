@@ -107,7 +107,7 @@ class WPSEO_Sitemaps_Router {
 	public function needs_sitemap_index_redirect() {
 		global $wp_query;
 
-		$protocol = 'http://';
+		$protocol = 'https://';
 		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.MissingUnslash,WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 		if ( ! empty( $_SERVER['HTTPS'] ) && strtolower( $_SERVER['HTTPS'] ) === 'on' ) {
 			$protocol = 'https://';

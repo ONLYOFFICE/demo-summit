@@ -162,7 +162,7 @@ $GLOBALS['gtm4wp_includefieldtexts'] = array(
 			),
 			'<a href="https://ipstack.com/product?utm_source=gtm4wp&utm_medium=link&utm_campaign=gtm4wp-google-tag-manager-for-wordpress" target="_blank" rel="noopener">',
 			'</a>',
-			'<a href="http://openweathermap.org/price?utm_source=gtm4wp&utm_medium=link&utm_campaign=gtm4wp-google-tag-manager-for-wordpress" target="_blank" rel="noopener">',
+			'<a href="https://openweathermap.org/price?utm_source=gtm4wp&utm_medium=link&utm_campaign=gtm4wp-google-tag-manager-for-wordpress" target="_blank" rel="noopener">',
 			'</a>'
 		),
 		'phase'       => GTM4WP_PHASE_EXPERIMENTAL,
@@ -180,7 +180,7 @@ $GLOBALS['gtm4wp_includefieldtexts'] = array(
 				'Enter your OpenWeatherMap API key here. %1$sGet a free API key here%2$s.',
 				'duracelltomi-google-tag-manager'
 			),
-			'<a href="http://openweathermap.org/price?utm_source=gtm4wp&utm_medium=link&utm_campaign=gtm4wp-google-tag-manager-for-wordpress" target="_blank" rel="noopener">',
+			'<a href="https://openweathermap.org/price?utm_source=gtm4wp&utm_medium=link&utm_campaign=gtm4wp-google-tag-manager-for-wordpress" target="_blank" rel="noopener">',
 			'</a>'
 		),
 		'phase'       => GTM4WP_PHASE_EXPERIMENTAL,

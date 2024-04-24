@@ -3,7 +3,7 @@
 /// getID3() by James Heinrich <info@getid3.org>               //
 //  available at https://github.com/JamesHeinrich/getID3       //
 //            or https://www.getid3.org                        //
-//            or http://getid3.sourceforge.net                 //
+//            or https://getid3.sourceforge.net                 //
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
@@ -1764,7 +1764,7 @@ class getid3_asf extends getid3_handler
 	 * @return array
 	 */
 	public function HeaderExtensionObjectDataParse(&$asf_header_extension_object_data, &$unhandled_sections) {
-		// https://web.archive.org/web/20140419205228/http://msdn.microsoft.com/en-us/library/bb643323.aspx
+		// https://web.archive.org/web/20140419205228/https://msdn.microsoft.com/en-us/library/bb643323.aspx
 
 		$offset = 0;
 		$objectOffset = 0;

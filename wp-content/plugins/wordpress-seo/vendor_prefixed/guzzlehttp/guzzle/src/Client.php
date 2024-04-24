@@ -27,7 +27,7 @@ class Client implements \YoastSEO_Vendor\GuzzleHttp\ClientInterface, \YoastSEO_V
      * default request options to apply to each request:
      *
      *     $client = new Client([
-     *         'base_uri'        => 'http://www.foo.com/1.0/',
+     *         'base_uri'        => 'https://www.foo.com/1.0/',
      *         'timeout'         => 0,
      *         'allow_redirects' => false,
      *         'proxy'           => '192.168.16.1:10'

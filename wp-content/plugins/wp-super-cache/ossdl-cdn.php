@@ -1,6 +1,6 @@
 <?php
 
-/* Taken from OSSDL CDN off-linker, a plugin by W-Mark Kubacki (http://mark.ossdl.de/) and used with permission */
+/* Taken from OSSDL CDN off-linker, a plugin by W-Mark Kubacki (https://mark.ossdl.de/) and used with permission */
 
 if ( ! isset( $ossdlcdn ) ) {
 	$ossdlcdn = 1; // have to default to on for existing users.
@@ -374,7 +374,7 @@ function scossdl_off_options() {
 		<input type="hidden" name="action" value="update_ossdl_off" />
 		<p class="submit"><input type="submit" class="button-primary" value="<?php esc_attr_e( 'Save Changes', 'wp-super-cache' ); ?>" /></p>
 		</form></p>
-		<p><?php _e( 'CDN functionality provided by <a href="https://wordpress.org/plugins/ossdl-cdn-off-linker/">OSSDL CDN Off Linker</a> by <a href="http://mark.ossdl.de/">Mark Kubacki</a>', 'wp-super-cache' ); ?></p>
+		<p><?php _e( 'CDN functionality provided by <a href="https://wordpress.org/plugins/ossdl-cdn-off-linker/">OSSDL CDN Off Linker</a> by <a href="https://mark.ossdl.de/">Mark Kubacki</a>', 'wp-super-cache' ); ?></p>
 		</div> <!-- Close .wpsc-card -->
 	<?php
 }

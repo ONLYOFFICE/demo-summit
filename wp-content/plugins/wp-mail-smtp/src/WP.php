@@ -380,7 +380,7 @@ class WP {
 	/**
 	 * Get the ISO 639-2 Language Code from user/site locale.
 	 *
-	 * @see   http://www.loc.gov/standards/iso639-2/php/code_list.php
+	 * @see   https://www.loc.gov/standards/iso639-2/php/code_list.php
 	 *
 	 * @since 2.8.0
 	 *

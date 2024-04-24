@@ -2985,7 +2985,7 @@ function _make_url_clickable_cb( $matches ) {
 function _make_web_ftp_clickable_cb( $matches ) {
 	$ret  = '';
 	$dest = $matches[2];
-	$dest = 'http://' . $dest;
+	$dest = 'https://' . $dest;
 
 	// Removed trailing [.,;:)] from URL.
 	$last_char = substr( $dest, -1 );
@@ -4506,13 +4506,13 @@ function esc_url( $url, $protocols = null, $_context = 'display' ) {
 	$url = str_replace( ';//', '://', $url );
 	/*
 	 * If the URL doesn't appear to contain a scheme, we presume
-	 * it needs http:// prepended (unless it's a relative link
+	 * it needs https:// prepended (unless it's a relative link
 	 * starting with /, # or ?, or a PHP file).
 	 */
 	if ( ! str_contains( $url, ':' ) && ! in_array( $url[0], array( '/', '#', '?' ), true ) &&
 		! preg_match( '/^[a-z0-9-]+?\.php/i', $url )
 	) {
-		$url = 'http://' . $url;
+		$url = 'https://' . $url;
 	}
 
 	// Replace ampersands and single quotes only when displaying.
@@ -5067,7 +5067,7 @@ function sanitize_option( $option, $value ) {
 				$error = $value->get_error_message();
 			} else {
 				$value = sanitize_url( $value );
-				$value = str_replace( 'http://', '', $value );
+				$value = str_replace( 'https://', '', $value );
 			}
 
 			if ( 'permalink_structure' === $option && null === $error
@@ -6196,7 +6196,7 @@ function _wp_emoji_list( $type = 'entities' ) {
  * @return string Shortened URL.
  */
 function url_shorten( $url, $length = 35 ) {
-	$stripped  = str_replace( array( 'https://', 'http://', 'www.' ), '', $url );
+	$stripped  = str_replace( array( 'https://', 'https://', 'www.' ), '', $url );
 	$short_url = untrailingslashit( $stripped );
 
 	if ( strlen( $short_url ) > $length ) {

@@ -4,7 +4,7 @@
  * CRON field factory implementing a flyweight factory
  *
  * @author Michael Dowling <mtdowling@gmail.com>
- * @link http://en.wikipedia.org/wiki/Cron
+ * @link https://en.wikipedia.org/wiki/Cron
  */
 class CronExpression_FieldFactory
 {
