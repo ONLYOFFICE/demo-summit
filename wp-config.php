@@ -22,11 +22,11 @@ define( 'LOGGED_IN_SALT',   'JzapmD ZR$(s#Uw*?P>JYrfglAkeJAcr0bQ T@5(i*`:(o[tHJg
 define( 'NONCE_SALT',       '[*SffJGF|t^:jX8R14X#uqS4=@~og!:r%Ph=YH)h><3S`$LzYw1jX5xo/or($^zr' );
 
 
-
+ */
 $table_prefix = 'wp_onlyoffice_summit_2024';
 
 
-
+ */
 define( 'WP_DEBUG', false );
 
 
