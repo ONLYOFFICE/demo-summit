@@ -1,46 +1,77 @@
-.invalid{
-    text-align: center;
-	margin-bottom: 90px;
-	padding: 112px 16px ;
+.main-error {
+	background: url("../images/top-vectors.svg"), linear-gradient(113.97deg, #00A6CE 6.6%, #0856A8 65.21%);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
 }
 
-.invalid__title{
-    font-size: 48px;
-    color: #fff;
-    padding: 56px 0 16px;
+.error {
+    padding: 112px 0;
 }
 
-.invalid__description{
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    padding-bottom: 16px;
-    max-width: 928px;
-    width: 100%;
+.error__wrapper {
     margin: 0 auto;
-}
-.home-page > button{
-    border-radius: 28px;
-    padding: 19px 24px;
-    background: #fff;
-    font-weight: 600;
-    font-size: 13px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    width: 100%;
+    max-width: 928px;
+    color: #fff;
     text-align: center;
-    color: #333;
-    display: inline-block;
-    transition: 0.3s ease;
 }
 
-.home-page:hover > button{
-    background: #e6eff2;
+.error__img {
+    margin-bottom: 56px;
+    width: 100%;
+    max-width: 560px;
 }
 
+.error__title {
+    margin-bottom: 16px;
+    font-size: 48px;
+    line-height: 64px;
+}
 
-@media (max-width:620px){
-    .invalid > .container > img {
+.error__description {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 1684px) {
+	.main-error {
+		background-size: initial;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.main-error {
+		background: linear-gradient(113.97deg, #00A6CE 6.6%, #0856A8 65.21%);
+	}
+
+    .error {
+        padding: 112px 0 88px;
+    }
+
+    .error__wrapper {
+        max-width: 564px;
+    }
+}
+
+@media screen and (max-width: 592px) {
+    .error {
+        padding: 48px 0;
+    }
+
+    .error__title {
+        margin-bottom: 16px;
+        font-size: 32px;
+        line-height: 44px;
+    }
+
+    .error__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .error__button {
         width: 100%;
     }
 }
