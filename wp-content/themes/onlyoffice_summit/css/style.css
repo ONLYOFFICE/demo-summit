@@ -1,87 +1,99 @@
-
-
 .hero {
-	background-image: url('/images/hero-bg.svg');
+	background: url("../images/hero-bg.svg"), linear-gradient(90deg, #2E93C6 0%, #004382 100%);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	overflow: hidden;
 }
 
-.hero .container img {
+.hero-icon {
 	position: absolute;
 }
 
 .left-top-icon {
 	top: 154px;
 	left: -69px;
+	width: 133px;
+	height: 125px;
+	background-image: url("../images/left-top-icon.svg");
 }
 
 .left-center-icon {
 	top: 511px;
 	left: -27px;
+	width: 24px;
+	height: 27px;
+	background-image: url("../images/left-center-icon.svg");
 }
 
 .left-bottom-icon {
 	top: 644px;
 	left: 3px;
+	width: 64px;
+	height: 65px;
+	background-image: url("../images/left-bottom-icon.svg");
 }
 
 .right-top-icon {
 	top: 125px;
 	right: 20px;
+	width: 26px;
+	height: 26px;
+	background-image: url("../images/right-top-icon.svg");
 }
 
 .right-center-icon {
 	top: 248px;
 	right: -23px;
+	width: 120px;
+	height: 134px;
+	background-image: url("../images/right-center-icon.svg");
 }
 
 .right-center-fill-icon {
 	top: 542px;
 	right: 102px;
+	width: 82px;
+	height: 82px;
+	background-image: url("../images/right-center-fill-icon.svg");
 }
 
 .right-bottom-icon {
 	top: 704px;
 	right: 3px;
+	width: 27px;
+	height: 26px;
+	background-image: url("../images/right-bottom-icon.svg");
 }
 
 .hero__inner {
-	padding: 175px 16px 264px;
+	padding: 173px 0 264px;
 	text-align: center;
 	z-index: 2;
 	position: relative;
 }
 
-.hero__inner h1,
-.hero__inner h3,
-.hero__inner p,
-.hero__inner span,
-.hero__inner a {
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
 .hero__title {
-	font-size: clamp(40px, 9vw, 80px);
+	font-size: 80px;
+	line-height: 109px;
 	color: #fff;
-	padding-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .hero__subtitle {
+	margin-bottom: 64px;
 	font-weight: 400;
 	font-size: 40px;
-	font-size: clamp(24px, 5vw, 40px);
-
+	line-height: 54px;
 	color: #fff;
 }
 
 .hero__date {
-	font-weight: 700;
+	margin-bottom: 64px;
 	font-size: 20px;
-	line-height: 160%;
+	font-weight: 700;
+	line-height: 32px;
 	color: #fff;
-	padding: 62px 0;
 }
 
 .hero__date span {
@@ -108,91 +120,76 @@
 }
 
 .members {
+	padding: 160px 0;
 	background: #333;
 }
 
-.members__inner {
-	padding: 160px 16px;
-	max-width: 1200px;
-	margin: 0 auto;
+.members_container.container {
+	max-width: 1248px;
 }
 
-.members__list {
+.members__items {
 	display: flex;
 	gap: 80px 176px;
 	flex-wrap: wrap;
 	justify-content: center;
 }
 
-.members__list--item {
+.members__item {
+	padding-top: 192px;
 	width: 160px;
-	display: flex;
-	flex-direction: column;
-	gap: 32px;
-	align-items: center;
-	text-align: center;
-}
-
-.members__list--item img {
-	width: 160px;
-	height: 160px;
-}
-
-.members__item-name {
-	font-weight: 600;
 	font-size: 18px;
-	line-height: 150%;
+	font-weight: 600;
+	line-height: 27px;
 	letter-spacing: 0.03em;
 	text-align: center;
 	color: #fff;
+	background-repeat: no-repeat;
+	background-size: 160px 160px;
 }
 
-.agenda__event {
+.agenda-event {
 	overflow: hidden;
 	background: #fff;
 	position: relative;
 }
 
-.agenda__event .container > img {
-	position: absolute;
-}
-
-.agenda__event__inner {
-	padding: 175px 16px 145px;
+.agenda-event__inner {
+	padding: 175px 0 145px;
 	text-align: center;
 	position: relative;
 	z-index: 10;
 }
 
-.agenda__event__title,
-.agenda__event__title {
+.agenda-event__title,
+.sponsors__title {
 	font-size: 48px;
-	line-height: 133%;
+	line-height: 64px;
 	color: #333;
 }
 
-.agenda__event__subtitle,
+.agenda-event__subtitle,
 .sponsors__subtitle {
 	font-weight: 400;
 	font-size: 20px;
-	line-height: 150%;
+	line-height: 30px;
 	color: #333;
-	padding: 24px 0 55px;
+	margin: 24px 0 56px;
 }
 
-.agenda__event__img,
+.agenda-event__img,
 .sponsors__img {
 	max-width: 736px;
 	margin: 0 auto;
-	padding-bottom: 64px;
+	margin-bottom: 56px;
 }
 
-.agenda__event__img img,
+.agenda-event__img img,
 .sponsors__img img {
 	width: 100%;
 }
 
-.agenda__event__link,
+.agenda-event__link,
 .sponsors__link {
 	border-radius: 28px;
 	padding: 19px 24px;
@@ -200,41 +197,64 @@
 	transition: 0.3s ease;
 }
 
-.agenda__event__link {
+.agenda-event__link {
 	background: #8bb825;
 }
 
-.agenda__event__link:hover {
+.agenda-event__link:hover {
 	background: #9fcc3a;
+}
+
+.agenda-icon {
+	position: absolute;
 }
 
 .agenda-left-top-icon {
 	top: 185px;
 	left: -58px;
+	width: 64px;
+	height: 65px;
+	background-image: url("../images/agenda-left-top-icon.svg");
 }
+
 .agenda-left-center-icon {
 	top: 343px;
 	left: 35px;
+	width: 25px;
+	height: 27px;
+	background-image: url("../images/agenda-left-center-icon.svg");
 }
 
 .agenda-left-bottom-icon {
 	top: 631px;
 	left: -70px;
+	width: 133px;
+	height: 120px;
+	background-image: url("../images/agenda-left-bottom-icon.svg");
 }
 
 .agenda-right-top-icon {
 	top: 157px;
 	right: -45px;
+	width: 120px;
+	height: 134px;
+	background-image: url("../images/agenda-right-top-icon.svg");
 }
 
 .agenda-right-center-icon {
 	top: 551px;
 	right: -15px;
+	width: 83px;
+	height: 82px;
+	background-image: url("../images/agenda-right-center-icon.svg");
 }
 
 .agenda-right-bottom-icon {
 	top: 710px;
 	right: -47px;
+	width: 27px;
+	height: 26px;
+	background-image: url("../images/agenda-right-bottom-icon.svg");
 }
 
 .sponsors__link {
@@ -245,7 +265,7 @@
 	background: #1572ca;
 }
 
-.agenda__event__link button,
+.agenda-event__link button,
 .sponsors__link button {
 	font-weight: 600;
 	font-size: 13px;
@@ -258,47 +278,37 @@
 }
 
 .sponsors {
+	padding: 204px 0 156px;
+	text-align: center;
 	background-color: #f5f5f5;
 }
 
-.sponsors__inner {
-	padding: 204px 16px 156px;
-	text-align: center;
-}
-
 .editions {
-	background-image: url('/images/summit-bg.svg');
+	padding: 160px 0;
+	text-align: center;
+	background: url("../images/summit-bg.svg"), linear-gradient(90deg, #0A66A7 20.58%, #1160AC 81.12%);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-}
-
-.editors__inner {
-	padding: 160px 16px;
-	text-align: center;
+	color: #fff;
 }
 
 .editors__title {
+	margin-bottom: 48px;
 	font-size: 48px;
-	line-height: 133%;
-	text-align: center;
-	color: #fff;
+	line-height: 64px;
 }
 
 .editors__subtitle {
 	font-size: 32px;
-	line-height: 150%;
-	text-align: center;
-	color: #fff;
-	padding: 48px 0 24px;
+	line-height: 48px;
+	margin-bottom: 24px;
 }
 
 .editors__info {
 	font-size: 20px;
-	line-height: 150%;
-	text-align: center;
-	color: #fff;
-	padding-bottom: 72px;
+	line-height: 30px;
+	margin-bottom: 72px;
 }
 
 .editors__content {
@@ -311,122 +321,144 @@
 	margin: 0 auto;
 }
 
-.registration {
+.registration-section {
+	padding: 155px 0 154px;
 	background-color: #333;
 }
 
-.registration__inner {
-	padding: 148px 16px;
+.registration-section__inner {
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
 	align-items: center;
+	color: #fff;
+	text-align: center;
 }
 
-.registration__title {
+.registration-section__title {
 	font-size: 48px;
-	line-height: 133%;
-	text-align: center;
-	color: #fff;
+	line-height: 64px;
 }
 
-.registration__text {
+.registration-section__text {
 	font-size: 20px;
-	line-height: 150%;
-	text-align: center;
-	color: #fff;
+	line-height: 30px;
 }
 
-.registration__btn {
-	border-radius: 28px;
-	padding: 19px 24px;
-	background: #ff6f3d;
-	transition: 0.3s ease;
-	display: inline-block;
-	text-align: center;
-}
+@media screen and (max-width: 1024px) {
+	.hero__inner {
+		padding: 112px 0;
+	}
 
-.registration__btn:hover {
-	background: #ff865c;
-}
+	.hero__title {
+		line-height: 72px;
+		line-height: 98px;
+	}
 
-.registration__btn button {
-	font-weight: 600;
-	font-size: 13px;
-	line-height: 133%;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	text-align: center;
-	color: #fff;
-}
+	.hero__subtitle {
+		font-size: 32px;
+		line-height: 44px;
+	}
 
-/* @media (max-width: 1250px) {
-	.hero .container img,
-	.event__agenda .container > img {
+	.members,
+	.agenda-event__inner,
+	.sponsors,
+	.editions,
+	.registration-section {
+		padding: 148px 0;
+	}
+
+	.members__items {
+		gap: 80px 112px;
+	}
+
+	.hero-icon,
+	.agenda-icon {
 		display: none;
 	}
-} */
-
-@media (max-width: 864px) {
-	.hero__inner,
-	.members__inner,
-	.agenda__event__inner,
-	.sponsors__inner,
-	.editors__inner,
-	.registration__inner {
-		padding: 148px 16px;
-	}
-
-	.members__list {
-		gap: 80px;
-	}
-
-	.editors__content {
-		height: 200px;
-	}
 }
 
-@media (max-width: 680px) {
-	.hero__inner,
-	.members__inner,
-	.agenda__event__inner,
-	.sponsors__inner,
-	.editors__inner,
-	.registration__inner {
-		padding: 72px 16px;
+@media screen and (max-width: 592px) {
+	.hero__title {
+		margin-bottom: 24px;
+		font-size: 40px;
+		line-height: 54px;
 	}
 
-	.hero__date,
-	.editors__info,
-	.registration__text,
-	.agenda__event__subtitle,
-	.sponsors__subtitle,
-	.editors__info,
-	.registration__text {
+	.hero__subtitle {
+		margin-bottom: 48px;
+		font-size: 24px;
+		line-height: 33px;
+	}
+
+	.hero__date {
+		margin-bottom: 48px;
 		font-size: 16px;
+		line-height: 28px;
 	}
 
-	.members__list {
-		gap: 80px;
+	.members__item {
+		font-size: 16px;
+		line-height: 24px;
 	}
 
-	.agenda__event__title,
-	.sponsors__title,
-	.editors__title,
-	.registration__title {
+	.agenda-event__subtitle,
+	.sponsors__subtitle {
+		margin: 24px 0 40px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.agenda-event__img, 
+	.sponsors__img {
+		margin-bottom: 40px;
+	}
+
+	.sponsors__button {
+		width: 100%;
+	}
+
+	.hero__inner,
+	.members,
+	.agenda-event__inner,
+	.sponsors,
+	.editions,
+	.registration-section {
+		padding: 72px 0;
+	}
+
+	.editors__title {
+		margin-bottom: 40px;
 		font-size: 32px;
+		line-height: 43px;
 	}
 
-	.editors__content {
-		height: 152px;
+	.editors__subtitle {
+		font-size: 20px;
+		line-height: 30px;
 	}
-}
 
-@media (max-width: 475px) {
-	.hero__register,
-	.agenda__event__link,
-	.sponsors__link,
-	.registration__btn {
+	.editors__info {
+		margin-bottom: 40px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.registration-section__title,
+	.agenda-event__title,
+	.sponsors__title {
+		font-size: 32px;
+		line-height: 43px;
+	}
+
+	.registration-section__text {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.hero__button,
+	.agenda-event__button,
+	.registration-section__button {
 		width: 100%;
 	}
 }
