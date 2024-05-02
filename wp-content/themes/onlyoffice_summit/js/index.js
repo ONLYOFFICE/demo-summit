@@ -89,4 +89,14 @@ window.addEventListener("load", function () {
 		agendaRightBottomIcon.style.right = -47 - (agendaScrollValue + 200) * -1 + "px";
 		agendaRightBottomIcon.style.transform = `rotate(${(agendaScrollValue + 200) * 0.45}deg)`;
 	};
+
+	if (document.querySelector(".phone_label")) {
+		document.addEventListener("click", function () {
+			if (!document.querySelector(".country-list")?.classList.contains("hide")) {
+				document.querySelector(".phone_label").classList.add("active")
+			} else {
+				document.querySelector(".phone_label").classList.remove("active")
+			}
+		});
+	}
 });
